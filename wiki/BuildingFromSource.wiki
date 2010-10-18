@@ -14,5 +14,6 @@ This document is how to build Jukes with Maven2, Ant, and Launch4J.
   # Create ANT_HOME, JAVA_HOME, M2_HOME and MAVEN_OPTS like the screenshot below:
   # Unzip [http://code.google.com/p/jukes/downloads/detail?name=jukes-dependencies.zip Jukes Dependencies Zip] to the location C:\Users\USER\.m2\repository  These are dependencies needed by Jukes not in the Maven Central Repo
   # From the root directory of the project where the pom.xml is run the command: *_mvn clean package antrun:run_*  This will build the whole project including the Windows and Unix deployments.  If you have any errors check the steps above for any missed steps.
+  # To use Eclipse simply run *_mvn eclipse:eclipse_* which will create the .classpath and .project files for you.  Then in Eclipse do File->Import->General->Existing Project Into Workspace
 
 http://melloware.biz/images/envvariables.png
