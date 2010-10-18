@@ -1,0 +1,12 @@
+Jukes Release Instructions
+---------------------------
+
+1. Update pom.xml to have correct new version number
+
+2. Fix changes.xml to have correct version and date
+
+3. mvn clean package antrun:run -Dprod
+
+4. mvn site -Dprod
+
+

@@ -1,0 +1,152 @@
+<?xml version="1.0"?>
+<document>
+  <properties>
+    <title>Playlists</title>
+    <author email="info.AT.melloware.DOT.com">Emil A Lefkof III</author>
+  </properties>
+  <body>
+    <section name="Playlists">
+      <p>
+      The Jukes supports both Winamp M3U files and the new XSPF "Spiff" Playlists.  
+      </p> 
+      
+      <subsection name="XSPF 'Spiff'">
+
+        <p>
+          XSPF is the XML format for sharing playlists. <a href="http://www.xspf.org/">www.xspf.org</a>
+
+           * It is open -- No proprietary lock-in.
+           * It is portable -- You should be able to send a playlist to your friend and have it work.
+           * It is well-engineered -- Most playlist formats get the easy things wrong.
+
+         Unlike M3U
+            XSPF is XML.
+         Unlike SMIL
+             XSPF is simple.
+         Unlike ASX
+             XSPF is open. 
+        </p>
+        
+        <p>
+          XSPF is implemented using the <a href="http://melloware.com/products/jspiff/index.html">JSpiff Java API for XSPF</a> written by Melloware.
+        </p>
+
+      </subsection>
+      <subsection name="Example">
+
+          <source>
+&lt;?xml version="1.0" encoding="UTF-8"&gt;
+          
+&lt;playlist version="1"&gt;
+  &lt;title&gt;Jukes Playlist&lt;/title&gt;
+  &lt;creator&gt;Emil A. Lefkof III&lt;/creator&gt;
+  &lt;info&gt;http://melloware.com/&lt;/info&gt;
+  &lt;date&gt;2005-12-18&lt;/date&gt;
+  &lt;trackList&gt;
+    &lt;track&gt;
+      &lt;location&gt;file:/C:/Music/Black%20Crowes/The%20Southern%20Harmony%20and%20Musical%20Companion/01%20-%20Sting%20Me.mp3&lt;/location&gt;
+      &lt;title&gt;Sting Me&lt;/title&gt;
+      &lt;creator&gt;Black Crowes&lt;/creator&gt;
+      &lt;annotation&gt;&lt;/annotation&gt;
+      &lt;album&gt;The Southern Harmony and Musical Companion&lt;/album&gt;
+      &lt;duration&gt;280&lt;/duration&gt;
+    &lt;/track&gt;
+    &lt;track&gt;
+      &lt;location&gt;file:/C:/Music/Black%20Crowes/The%20Southern%20Harmony%20and%20Musical%20Companion/02%20-%20Remedy.mp3&lt;/location&gt;
+      &lt;title&gt;Remedy&lt;/title&gt;
+      &lt;creator&gt;Black Crowes&lt;/creator&gt;
+      &lt;annotation&gt;&lt;/annotation&gt;
+      &lt;album&gt;The Southern Harmony and Musical Companion&lt;/album&gt;
+      &lt;duration&gt;322&lt;/duration&gt;
+    &lt;/track&gt;
+    &lt;track&gt;
+      &lt;location&gt;file:/C:/Music/Black%20Crowes/The%20Southern%20Harmony%20and%20Musical%20Companion/03%20-%20Thorn%20in%20My%20Pride.mp3&lt;/location&gt;
+      &lt;title&gt;Thorn in My Pride&lt;/title&gt;
+      &lt;creator&gt;Black Crowes&lt;/creator&gt;
+      &lt;annotation&gt;&lt;/annotation&gt;
+      &lt;album&gt;The Southern Harmony and Musical Companion&lt;/album&gt;
+      &lt;duration&gt;363&lt;/duration&gt;
+    &lt;/track&gt;
+    &lt;track&gt;
+      &lt;location&gt;file:/C:/Music/Black%20Crowes/The%20Southern%20Harmony%20and%20Musical%20Companion/04%20-%20Bad%20Luck%20Blue%20Eyes%20Goodbye.mp3&lt;/location&gt;
+      &lt;title&gt;Bad Luck Blue Eyes Goodbye&lt;/title&gt;
+      &lt;creator&gt;Black Crowes&lt;/creator&gt;
+      &lt;annotation&gt;&lt;/annotation&gt;
+      &lt;album&gt;The Southern Harmony and Musical Companion&lt;/album&gt;
+      &lt;duration&gt;388&lt;/duration&gt;
+    &lt;/track&gt;
+    &lt;track&gt;
+      &lt;location&gt;file:/C:/Music/Black%20Crowes/The%20Southern%20Harmony%20and%20Musical%20Companion/05%20-%20Sometimes%20Salvation.mp3&lt;/location&gt;
+      &lt;title&gt;Sometimes Salvation&lt;/title&gt;
+      &lt;creator&gt;Black Crowes&lt;/creator&gt;
+      &lt;annotation&gt;&lt;/annotation&gt;
+      &lt;album&gt;The Southern Harmony and Musical Companion&lt;/album&gt;
+      &lt;duration&gt;284&lt;/duration&gt;
+    &lt;/track&gt;
+    &lt;track&gt;
+      &lt;location&gt;file:/C:/Music/Black%20Crowes/The%20Southern%20Harmony%20and%20Musical%20Companion/06%20-%20Hotel%20Illness.mp3&lt;/location&gt;
+      &lt;title&gt;Hotel Illness&lt;/title&gt;
+      &lt;creator&gt;Black Crowes&lt;/creator&gt;
+      &lt;annotation&gt;&lt;/annotation&gt;
+      &lt;album&gt;The Southern Harmony and Musical Companion&lt;/album&gt;
+      &lt;duration&gt;239&lt;/duration&gt;
+    &lt;/track&gt;
+    &lt;track&gt;
+      &lt;location&gt;file:/C:/Music/Black%20Crowes/The%20Southern%20Harmony%20and%20Musical%20Companion/07%20-%20Black%20Moon%20Creeping.mp3&lt;/location&gt;
+      &lt;title&gt;Black Moon Creeping&lt;/title&gt;
+      &lt;creator&gt;Black Crowes&lt;/creator&gt;
+      &lt;annotation&gt;&lt;/annotation&gt;
+      &lt;album&gt;The Southern Harmony and Musical Companion&lt;/album&gt;
+      &lt;duration&gt;295&lt;/duration&gt;
+    &lt;/track&gt;
+    &lt;track&gt;
+      &lt;location&gt;file:/C:/Music/Black%20Crowes/The%20Southern%20Harmony%20and%20Musical%20Companion/08%20-%20No%20Speak%20No%20Slave.mp3&lt;/location&gt;
+      &lt;title&gt;No Speak No Slave&lt;/title&gt;
+      &lt;creator&gt;Black Crowes&lt;/creator&gt;
+      &lt;annotation&gt;&lt;/annotation&gt;
+      &lt;album&gt;The Southern Harmony and Musical Companion&lt;/album&gt;
+      &lt;duration&gt;241&lt;/duration&gt;
+    &lt;/track&gt;
+    &lt;track&gt;
+      &lt;location&gt;file:/C:/Music/Black%20Crowes/The%20Southern%20Harmony%20and%20Musical%20Companion/09%20-%20My%20Morning%20Song.mp3&lt;/location&gt;
+      &lt;title&gt;My Morning Song&lt;/title&gt;
+      &lt;creator&gt;Black Crowes&lt;/creator&gt;
+      &lt;annotation&gt;&lt;/annotation&gt;
+      &lt;album&gt;The Southern Harmony and Musical Companion&lt;/album&gt;
+      &lt;duration&gt;375&lt;/duration&gt;
+    &lt;/track&gt;
+    &lt;track&gt;
+      &lt;location&gt;file:/C:/Music/Black%20Crowes/The%20Southern%20Harmony%20and%20Musical%20Companion/10%20-%20Time%20Will%20Tell.mp3&lt;/location&gt;
+      &lt;title&gt;Time Will Tell&lt;/title&gt;
+      &lt;creator&gt;Black Crowes&lt;/creator&gt;
+      &lt;annotation&gt;&lt;/annotation&gt;
+      &lt;album&gt;The Southern Harmony and Musical Companion&lt;/album&gt;
+      &lt;duration&gt;248&lt;/duration&gt;
+    &lt;/track&gt;
+    &lt;track&gt;
+      &lt;location&gt;file:/C:/Music/Black%20Crowes/The%20Southern%20Harmony%20and%20Musical%20Companion/11%20-%20Sting%20Me%20%5BSlow%5D%5B%5D.mp3&lt;/location&gt;
+      &lt;title&gt;Sting Me [Slow][*]&lt;/title&gt;
+      &lt;creator&gt;Black Crowes&lt;/creator&gt;
+      &lt;annotation&gt;&lt;/annotation&gt;
+      &lt;album&gt;The Southern Harmony and Musical Companion&lt;/album&gt;
+      &lt;duration&gt;349&lt;/duration&gt;
+    &lt;/track&gt;
+    &lt;track&gt;
+      &lt;location&gt;file:/C:/Music/Black%20Crowes/The%20Southern%20Harmony%20and%20Musical%20Companion/12%20-%2099%20Lbs%20%5B%5D.mp3&lt;/location&gt;
+      &lt;title&gt;99 Lbs [*]&lt;/title&gt;
+      &lt;creator&gt;Black Crowes&lt;/creator&gt;
+      &lt;annotation&gt;&lt;/annotation&gt;
+      &lt;album&gt;The Southern Harmony and Musical Companion&lt;/album&gt;
+      &lt;duration&gt;258&lt;/duration&gt;
+    &lt;/track&gt;
+  &lt;/trackList&gt;
+&lt;/playlist&gt;
+          
+          </source>
+
+
+      </subsection>
+    </section>
+    
+  </body>
+</document>

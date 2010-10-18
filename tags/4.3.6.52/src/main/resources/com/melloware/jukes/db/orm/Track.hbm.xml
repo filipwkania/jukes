@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.melloware.jukes.db.orm.Track" table="TRACK"  lazy="true">
+        <id name="id" type="long">
+            <column name="ID" />
+            <generator class="native" />
+        </id>
+        
+        <natural-id mutable="true">
+           <many-to-one name="disc" class="com.melloware.jukes.db.orm.Disc" fetch="select">
+               <column name="DISC_ID" not-null="true" />
+           </many-to-one>
+           <property name="trackNumber" type="string">
+               <column name="TRACK_NUMBER" length="10" not-null="true" />
+           </property>
+           <property name="name" type="string" index="IDX_TRACK_NAME" >
+               <column name="NAME" length="100" not-null="true"  />
+           </property>
+        </natural-id>
+        
+        <version column="MODIFIED_DATE" name="modifiedDate" type="timestamp"/>
+        
+        <property name="bitrate" type="long">
+            <column name="BITRATE" not-null="true" />
+        </property>
+        <property name="duration" type="long">
+            <column name="DURATION" not-null="true" />
+        </property>
+        <property name="durationTime" type="string">
+            <column name="DURATION_TIME" length="25" not-null="true" />
+        </property>
+        <property name="trackUrl" type="string">
+            <column name="TRACK_URL" length="255" not-null="true" unique="true" />
+        </property>
+        <property name="trackSize" type="long">
+            <column name="TRACK_SIZE_IN_BYTES" not-null="true" />
+        </property>
+        <property name="comment" type="string">
+               <column name="COMMENT" length="254"/>
+        </property>
+        <property name="createdUser" type="string">
+            <column name="CREATED_USER" length="50" not-null="true" />
+        </property>
+        <property name="createdDate" type="timestamp">
+            <column name="CREATED_DATE" length="6" not-null="true" />
+        </property>
+        <property name="modifiedUser" type="string">
+            <column name="MODIFIED_USER" length="50" not-null="true" />
+        </property>
+        
+    </class>
+</hibernate-mapping>
