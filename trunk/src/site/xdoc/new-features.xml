@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<document>
+  <properties>
+    <title>New Features</title>
+    <author email="info.AT.melloware.DOT.com">Emil A Lefkof III</author>
+  </properties>
+  <body>
+    <section name="New Features">
+      <p>
+      Some new features of the Jukes...
+      </p> 
+      <ul>
+        <li>Cross platform - works on Linux, Solaris, MacOSX, Windows.</li>
+        <li>Full support of ID3 v2.4 MP3 tags.</li>
+        <li>Full support of MP3, OGG Vorbis, FLAC, Monkey Audio APE, and SPEEX</li>
+        <li>Automatic creation of database if not found.  No more proprietary use of MS Access.</li>
+        <li>Ability to display/sort your discs and tracks anyway you want.  Lets you order discs by year, bitrate, name etc.  Tracks by track number, or bitrate, or alphabetically.</li>
+        <li>Highlights any disc or tracks added within the last XX days.  This allows new editions to stand out in large collections.</li>
+        <li>Filter by Genre, Years, Bitrates and most recently added albums</li>
+        <li>Disc Cleaner to remove discs that no longer exist in storage from the database.  Useful for people that use IPods or Archos Jukeboxes as their storage.</li>
+        <li>Inline editing of artists, discs, tracks rather than the old click to open a new window metaphor.</li>
+        <li>Ability to import and export preferences.</li>
+        <li>File renaming based on a user defined regular expression.  So you can name your files 01-Track1.mp3 or 01 - Track1 - 128kbps.mp3 or Track1 - 01.mp3</li>
+        <li>Web Search to retrieve disc cover, year, track names, and artist and disc name using Amazon.com Web Service.</li>
+        <li>Advanced search to find tracks.  Fuzzy text search as well as by year, genre, bitrate.</li>
+        <li>Ability to export search results as CSV files for ad-hoc reporting.</li>
+        <li>Tray icon for easy access, single click pause/play, mouse wheel click to advance next song.</li>
+        <li>WINDOWS ONLY: Ability to listen to Intellitype commands Pause Play Stop found on newer keyboards.</li>
+        <li>WINDOWS ONLY: Window+J key combination shows/hides the Jukes no matter where you are in Windows using global Hotkey</li>
+        <li>History is kept for a session so all songs played during a session can be saved as a playlist.</li>
+        <li>Correct title casing.  Old Jukes: Can'T Get To 5Th Street.  New Jukes:  Can't Get To 5th Street </li>
+        <li>Playlists can be saved as Winamp .m3u files.  </li>
+        <li>Playlists can be saved as XSPF playlist as described here:  <a href="http://www.xspf.org/">xspf.org</a></li>
+        <li>When more than one image is found per album the largest image is selected.</li>
+        <li>Forced artist/album directory structure no longer applies.  Jukes recursively looks below all subdirectories looking for folders than contain music files.</li>
+        <li>When searching in the treeview the search no wraps unlike the old Jukes. </li>
+        <li>Any album image can be clicked on to take you to the album.  Mousewheel click on album cover queues that album.</li>
+        <li>Album cover displays can be sized according to your taste or monitor size.</li>
+        <li>Database backup tool for compacting and zipping up your database.</li>
+        <li>Global Location Change tool for updating your database if you move your collection from c:\music to d:\music or anywhere else.</li>
+      </ul>
+    </section>
+    
+  </body>
+</document>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<profilesXml>
+<profiles>
+   <profile>
+      <id>default</id>
+
+      <activation>
+         <property>
+            <name>dev</name>
+         </property>
+      </activation>
+
+      <properties>
+         <log4j.default.level>DEBUG</log4j.default.level>
+         <log4j.3rdparty.level>WARN</log4j.3rdparty.level>
+         <log4j.rootlogger>stdout,JUKES</log4j.rootlogger>
+         <log4j.pattern>%d{MM/dd/yyyy HH:mm:ss} %-5p - [%C{1}.%M:%L] %m %n</log4j.pattern>
+         <log4j.logfile.start1>$</log4j.logfile.start1>
+         <log4j.logfile.start2>{</log4j.logfile.start2>
+         <log4j.logfile.end>}</log4j.logfile.end>
+         <log4j.logfile>/.jukes/jukes.log</log4j.logfile>
+      </properties>
+
+   </profile>
+
+   <profile>
+      <id>prod</id>
+
+      <activation>
+         <property>
+            <name>prod</name>
+         </property>
+      </activation>
+
+      <properties>
+         <log4j.default.level>INFO</log4j.default.level>
+         <log4j.3rdparty.level>ERROR</log4j.3rdparty.level>
+         <log4j.rootlogger>JUKES</log4j.rootlogger>
+         <log4j.pattern>%d{MM/dd/yyyy HH:mm:ss} %-5p - %m %n</log4j.pattern>
+         <log4j.logfile.start1>$</log4j.logfile.start1>
+         <log4j.logfile.start2>{</log4j.logfile.start2>
+         <log4j.logfile.end>}</log4j.logfile.end>
+         <log4j.logfile>/.jukes/jukes.log</log4j.logfile>
+      </properties>
+
+   </profile>
+</profiles>
+</profilesXml>

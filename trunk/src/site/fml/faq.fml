@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<faqs title="Frequently Asked Questions">
+
+  <head>
+    <link rel="icon" href="favicon.ico" type="image/x-icon"/>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+  </head>
+
+  <part id="general">
+    <title>General</title>
+
+    <faq id="what-is-jukes">
+      <question>
+        What is <strong>Jukes</strong>?
+      </question>
+      <answer>
+        <strong>Jukes</strong> is a cross platform music player and organizer for people 
+        with large music collections.
+      </answer>
+    </faq>
+
+
+    <faq id="why-use-it">
+      <question>
+        Why should I use <strong>Jukes</strong> rather than
+        other programs to organize and play music?
+      </question>
+      <answer>
+        The main features of <strong>Jukes</strong> that distinguishes it from
+        similar programs is that it uses an internal database for indexing and
+        quick access to your music.  I know that Itunes uses a database also and
+        but they don't seem to "get it".  ITunes is an XML format which is slow 
+        and HUGE storage.  Jukes allows mutliple users to connect to the same 
+        database and is written in Java so it works on all platforms supporting
+        Java 1.6 or higher.
+      </answer>
+    </faq>
+
+    <faq id="on-which-platform">
+      <question>
+        On which platform does it run?
+      </question>
+      <answer>
+        We provide some pre-compiled <a href="downloads.html">binaries</a>
+        for the Windows, Linux and MacOSX platforms but
+        <strong>Jukes</strong> will run anywhere if there is a Java 6+
+        environment installed.
+        Check the <a href="downloads.html">Download</a>.
+      </answer>
+    </faq>
+
+    <faq id="does-it-run-on-mac">
+      <question>
+        Does it run on Mac OS X?
+      </question>
+      <answer>
+        Yes it does.
+        On MacOSX, you don't even have to install a Java environment, since it
+        comes with the operating system, so you can start using
+        <strong>Jukes</strong> right away! Although only MacOSX 10.5 or higher 
+        come with Java 6.  It will not run on 10.4 or under.
+      </answer>
+    </faq>
+
+    <faq id="where-get-help">
+      <question>
+        Where do I get help on <strong>Jukes</strong>?
+      </question>
+      <answer>
+          This FAQ answers some frequent questions already, please read the
+          it thoroughly.
+        <p></p>
+          If these resources don't help you with your problem,
+          or if you think that you found a bug that is not yet documented,
+          you should <a href="contacts.html">contact</a> us.
+      </answer>
+    </faq>
+
+    <faq id="question-not-addressed">
+      <question>
+        I have a question that is not addressed here.
+        Where can I ask?
+      </question>
+      <answer>
+         See our <a href="contacts.html">Contacts</a> page.
+      </answer>
+    </faq>
+
+  </part>
+
+
+  <part id="using">
+    <title>Using Jukes</title>
+
+    <faq id="what-are-prereqs">
+      <question>
+         What are the prerequisites for using <strong>Jukes</strong>?
+      </question>
+      <answer>
+         Jukes is a Java application that is quite resource intensive.  We
+         recommend at least a 1 Ghz machine with 512 MEG RAM running JRE 6 or
+         higher.
+      </answer>
+    </faq>
+
+
+    <faq id="collection">
+      <question>
+         How do I load my entire collection at once?
+      </question>
+      <answer>
+         Under the Catalog menu option there is an Album Finder option.  Just point this
+         at a directory where your music is and it will try and find and load it all.  This
+         may take a while....
+      </answer>
+    </faq>
+    
+    <faq id="collection2">
+      <question>
+         How do I connect multiple machines to the same music collection on my network?
+      </question>
+      <answer>
+         Please see the <a href="remote.html">Remote Connection How-To</a> section.
+      </answer>
+    </faq>
+    
+    <faq id="backup">
+      <question>
+         Can I to copy my database to back it up?
+      </question>
+      <answer>
+         Yes, it just a directory of 5 files that makes up the database. In Jukes you can do 
+         Tools->Backup Database and it will compact your files and put them in a ZIP file for you.
+      </answer>
+    </faq>
+    
+    <faq id="internet">
+      <question>
+         Do I need to be connected to the Internet to use <strong>Jukes</strong>?
+      </question>
+      <answer>
+         No. While HSQLDB uses TCP/IP and HTTP to connect it does so as localhost as default. 
+         The only feature you will not be able to use without a connection is the Amazon Web Service 
+         for album searches. This of course needs the Internet.
+      </answer>
+    </faq>
+    
+    <faq id="playlists">
+      <question>
+         Can I share playlists with my friends?
+      </question>
+      <answer>
+         Yes, but only tracks they have in their database will be played. So if you send a friend a list 
+         of 10 songs but they only have 8 of them on their machine of course only those 8 tracks will 
+         be loaded.  Playlists can either be saved as Winamp .M3U files or XSpiff .xspf files.
+      </answer>
+    </faq>
+    
+    <faq id="tags">
+      <question>
+         What version of tags do you use?
+      </question>
+      <answer>
+         For MP3's ID3v1.1 and ID3v2.4 are used.  For OGG, FLAC, SPEEX the Vorbis Comment tags will be used.
+         For APE the Monkey Audio tagging format is used.
+      </answer>
+    </faq>
+    
+    <faq id="fle-types">
+      <question>
+         What types of audio files does <strong>Jukes</strong> support?
+      </question>
+      <answer>
+         Currently Ogg Vorbis OGG, MP3 MPEG, Monkey Audio APE, FLAC Free Lossless Audio, and SPEEX Codec For Free Speech are supported.
+      </answer>
+    </faq>
+    
+    <faq id="large">
+      <question>
+         Can the <strong>Jukes</strong> really handle my large collection?
+      </question>
+      <answer>
+         Yes. Jukes has been tested with a collection of 5000+ full albums with over 55,000 songs and a 320 GIG hard drive.
+      </answer>
+    </faq>
+   
+    
+    <faq id="database">
+      <question>
+         What kind of "internal" db are you using? Will I still be able to browse this db with some kind of application?
+         Write my own reports against that database?
+      </question>
+      <answer>
+         Jukes is using an open source DB called HSQLDB. <a href="http://hsqldb.org/">http://hsqldb.org/</a>.  It is the 
+         same internal database used in OpenOffice 2.0.  Yes you can browse it using any JDBC compliant database tool 
+         like the wonderful Aqua Data Studio. <a href="http://www.aquafold.com/ ">http://www.aquafold.com/</a>.  Once 
+         you connect to the database your can query it any way you like for custom reporting.  The JDBC connection
+         URL is <code>jdbc:hsqldb:hsql://127.0.0.1/jukes</code>.
+      </answer>
+    </faq>
+
+  </part>
+  
+  <part id="problems">
+    <title>Problems</title>
+    
+    <faq id="amazon">
+      <question>
+         Why does the Amazon Web Service search only return 10 results?
+      </question>
+      <answer>
+         This is a limitation of the Web Service.  Since Amazon offers it for free they only allow 10 results per search.
+      </answer>
+    </faq>
+    
+    <faq id="jintellitype">
+      <question>
+         I get the following error: "JIntellitype.dll not found in java.library.path".
+      </question>
+      <answer>
+         You are using the Windows version of Jukes and JIntellitype.dll is not in the same location as the JAR or EXE
+         or in Windows/System32.
+      </answer>
+    </faq>
+  </part>
+
+  <part id="development">
+    <title>Development</title>
+
+    <faq id="can-i-contribute">
+      <question>
+        Can I contribute?
+      </question>
+      <answer>
+        Yes, please! Check out the <a href="contacts.html">contact</a> page and contact us!
+      </answer>
+    </faq>
+    
+    <faq id="translators">
+      <question>
+        Can I translate to my language?
+      </question>
+      <answer>
+        Yes, please! Translations are welcome, check out <a href="contacts.html">contact</a> page and contact us!
+      </answer>
+    </faq>
+
+    <faq id="i-found-a-bug">
+      <question>
+        I think I found a bug in <strong>Jukes</strong>.
+        What should I do?
+      </question>
+      <answer>
+        You should post it to the <a href="http://forum.melloware.com/index.php">forums</a> to
+        make sure it is documented.  If there is a strack trace associated with it in the
+        (user_home)./jukes/juke.log that would be very helpful too.
+      </answer>
+    </faq>
+
+    <faq id="when-will-feature">
+      <question>
+        When will feature XYZ be implemented?
+      </question>
+      <answer>
+        Depends. If it is something you really sorely need, you could (politely)
+        try to exert some pressure on us. You can also try to pay us.
+        Or try to implement your feature yourself and send us some patches.
+        In any case, you should <a href="contacts.html">contact</a> us about your problem.
+      </answer>
+    </faq>
+
+  </part>
+
+</faqs>
