@@ -470,10 +470,10 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-project-info-reports-plugin</artifactId>
-		<version>2.1</version>
-		<configuration>
+        <version>2.1</version>
+        <configuration>
           <dependencyLocationEnabled>false</dependencyLocationEnabled>
-        </configuration> 
+        </configuration>
         <reportSets>
           <reportSet>
             <reports>
@@ -646,6 +646,9 @@
           <addGroupIdToProjectName>true</addGroupIdToProjectName>
           <downloadSources>true</downloadSources>
           <downloadJavadocs>true</downloadJavadocs>
+          <excludes>
+            <exclude>xml-apis:xml-apis</exclude>
+          </excludes>
         </configuration>
       </plugin>
       <plugin>
@@ -667,7 +670,7 @@
             <property name="zip.file.windows" location="${windows.dir}/${pom.artifactId}-${pom.version}-windows.zip" />
             <property name="zip.file.nix" location="${unix.dir}/${pom.artifactId}-${pom.version}-nix.zip" />
             <property name="jar.file" location="${basedir}/target/${pom.artifactId}-${pom.version}.jar" />
-            <taskdef  name="launch4j" classname="net.sf.launch4j.ant.Launch4jTask" classpath="${launch4j.dir}/launch4j.jar:${launch4j.dir}/lib/xstream.jar">
+            <taskdef name="launch4j" classname="net.sf.launch4j.ant.Launch4jTask" classpath="${launch4j.dir}/launch4j.jar:${launch4j.dir}/lib/xstream.jar">
             </taskdef>
             <delete dir="${windows.dir}" />
             <mkdir dir="${windows.dir}" />
