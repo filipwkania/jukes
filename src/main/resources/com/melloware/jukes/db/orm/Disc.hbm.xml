@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.melloware.jukes.db.orm.Disc" table="DISC" lazy="true">
+        <id name="id" type="long">
+            <column name="ID" />
+            <generator class="native" />
+        </id>
+        
+        <natural-id mutable="true">
+           <many-to-one name="artist" class="com.melloware.jukes.db.orm.Artist" fetch="select">
+               <column name="ARTIST_ID" not-null="true" />
+           </many-to-one>
+           <property name="name" type="string" index="IDX_DISC_NAME"  >
+               <column name="NAME" length="100" not-null="true" />
+           </property>
+        </natural-id>
+        
+        <version column="MODIFIED_DATE" name="modifiedDate" type="timestamp"/>
+        
+        <property name="location" type="string">
+            <column name="LOCATION"  length="254" not-null="true" unique="true" />
+        </property>
+        <property name="year" type="string">
+            <column name="YEAR" length="4" not-null="true" />
+        </property>
+        <property name="genre" type="string">
+            <column name="GENRE" length="100" not-null="true" />
+        </property>
+        <property name="bitrate" type="long">
+            <column name="BITRATE" not-null="true" />
+        </property>
+        <property name="duration" type="long">
+            <column name="DURATION" not-null="true" />
+        </property>
+        <property name="durationTime" type="string">
+            <column name="DURATION_TIME" length="25" not-null="true" />
+        </property>
+        <property name="coverUrl" type="string">
+            <column name="COVER_URL" length="254" />
+        </property>
+        <property name="coverSize" type="long">
+            <column name="COVER_SIZE_IN_BYTES" />
+        </property>
+        <property name="notes" type="string">
+            <column name="NOTES" length="500"/>
+        </property>
+        <property name="createdUser" type="string">
+            <column name="CREATED_USER" length="50" not-null="true" />
+        </property>
+        <property name="createdDate" type="timestamp">
+            <column name="CREATED_DATE" length="6" not-null="true" />
+        </property>
+        <property name="modifiedUser" type="string">
+            <column name="MODIFIED_USER" length="50" not-null="true" />
+        </property>
+        
+        <set name="tracks" order-by="TRACK_NUMBER" cascade="all-delete-orphan" inverse="true">
+            <key>
+                <column name="DISC_ID" not-null="true" />
+            </key>
+            <one-to-many class="com.melloware.jukes.db.orm.Track" />
+        </set>
+    </class>
+</hibernate-mapping>
