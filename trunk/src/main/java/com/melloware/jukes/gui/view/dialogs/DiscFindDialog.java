@@ -17,6 +17,7 @@ import javax.swing.AbstractAction;
 import javax.swing.Action;
 import javax.swing.DefaultListModel;
 import javax.swing.JButton;
+import javax.swing.JCheckBox;
 import javax.swing.JComponent;
 import javax.swing.JFileChooser;
 import javax.swing.JLabel;
@@ -26,7 +27,6 @@ import javax.swing.JScrollPane;
 import javax.swing.JTextField;
 import javax.swing.ListSelectionModel;
 import javax.swing.text.JTextComponent;
-import javax.swing.JCheckBox;
 
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.filefilter.DirectoryFileFilter;
@@ -67,8 +67,7 @@ import com.melloware.jukes.util.MessageUtil;
  * <p>
  * Copyright (c) 1999-2007 Melloware, Inc. <http://www.melloware.com>
  * @author Emil A. Lefkof III <info@melloware.com>
- * @version 4.0
- * AZ - some modifications 2009
+ * @version 4.0 AZ - some modifications 2009
  */
 @SuppressWarnings("unchecked")
 public final class DiscFindDialog extends AbstractDialog {
@@ -89,7 +88,7 @@ public final class DiscFindDialog extends AbstractDialog {
    private final Settings settings;
    private Worker worker;
    private static boolean closeDialog = false;
-   private JCheckBox flagErrorsOnly; //AZ
+   private JCheckBox flagErrorsOnly; // AZ
 
    /**
     * Constructs a default about dialog using the given owner.
@@ -129,6 +128,7 @@ public final class DiscFindDialog extends AbstractDialog {
     * (non-Javadoc)
     * @see com.jgoodies.swing.AbstractDialog#doApply()
     */
+   @Override
    public void doApply() {
       LOG.debug("Apply pressed.");
       buttonCancel.setEnabled(true);
@@ -145,10 +145,12 @@ public final class DiscFindDialog extends AbstractDialog {
        * InterruptedException in doWork().
        */
       worker = new Worker() {
+         @Override
          public Object construct() {
             return doWork(flagErrorsOnly.isSelected());
          }
 
+         @Override
          public void finished() {
             if (closeDialog) {
                ActionManager.get(Actions.REFRESH_ID).actionPerformed(null);
@@ -167,6 +169,7 @@ public final class DiscFindDialog extends AbstractDialog {
     * (non-Javadoc)
     * @see com.jgoodies.swing.AbstractDialog#doCancel()
     */
+   @Override
    public void doCancel() {
       LOG.debug("Cancel Pressed.");
       if (worker != null) {
@@ -182,6 +185,7 @@ public final class DiscFindDialog extends AbstractDialog {
     * Builds and answers the dialog's content.
     * @return the dialog's content with tabbed pane and button bar
     */
+   @Override
    protected JComponent buildContent() {
       final JPanel content = new JPanel(new BorderLayout());
       content.add(buildMainPanel(), BorderLayout.CENTER);
@@ -193,6 +197,7 @@ public final class DiscFindDialog extends AbstractDialog {
     * Builds and returns the dialog's header.
     * @return the dialog's header component
     */
+   @Override
    protected JComponent buildHeader() {
       return new HeaderPanel(Resources.getString("label.discfinder"), Resources.getString("label.discfindermessage"),
                Resources.DISC_FINDER_ICON);
@@ -232,7 +237,7 @@ public final class DiscFindDialog extends AbstractDialog {
       builder.addSeparator(Resources.getString("label.Find"), cc.xyw(1, row++, 3));
       builder.add(buildDirectoryPanel(), cc.xyw(1, row++, 3));
       builder.add(buildListPanel(), cc.xyw(1, row, 3));
-      //AZ flagErrorsOnly
+      // AZ flagErrorsOnly
       flagErrorsOnly = new JCheckBox(Resources.getString("label.errorsonly"), false);
       builder.add(flagErrorsOnly, cc.xyw(2, 5, 2));
       panel = builder.getPanel();
@@ -285,17 +290,17 @@ public final class DiscFindDialog extends AbstractDialog {
 
          MessageUtil.showInformation(this, Resources.getString("label.reportsaved"));
       } catch (IOException ex) {
-       	final String errorMessage = ResourceUtils.getString("label.Errorwritingfile") + "\n\n" + ex.getMessage(); 
-         MessageUtil.showError(this, errorMessage); //AZ
+         final String errorMessage = ResourceUtils.getString("label.Errorwritingfile") + "\n\n" + ex.getMessage();
+         MessageUtil.showError(this, errorMessage); // AZ
          LOG.error(errorMessage, ex);
       } catch (InfrastructureException ex) {
-         final String errorMessage = ResourceUtils.getString("label.Errorwritingfile") + "\n\n" + ex.getMessage(); 
-         MessageUtil.showError(this, errorMessage); //AZ
+         final String errorMessage = ResourceUtils.getString("label.Errorwritingfile") + "\n\n" + ex.getMessage();
+         MessageUtil.showError(this, errorMessage); // AZ
          LOG.error(errorMessage, ex);
       } catch (Exception ex) {
-          final String errorMessage = ResourceUtils.getString("label.Errorwritingfile"); 
-          MessageUtil.showError(this, errorMessage); //AZ
-          LOG.error(errorMessage, ex);
+         final String errorMessage = ResourceUtils.getString("label.Errorwritingfile");
+         MessageUtil.showError(this, errorMessage); // AZ
+         LOG.error(errorMessage, ex);
       }
    }
 
@@ -303,6 +308,7 @@ public final class DiscFindDialog extends AbstractDialog {
     * (non-Javadoc)
     * @see com.jgoodies.swing.AbstractDialog#doCloseWindow()
     */
+   @Override
    protected void doCloseWindow() {
       super.doClose();
    }
@@ -318,11 +324,7 @@ public final class DiscFindDialog extends AbstractDialog {
       ((JTextField) directory).setColumns(50);
       directory.setText(this.settings.getStartInDirectory().getAbsolutePath());
       final FormLayout layout = new FormLayout(
-               "right:max(14dlu;pref), 4dlu, left:min(60dlu;pref):grow, pref, 40dlu, ,pref, pref", "p, 4px, p, 4px"); // extra
-                                                                                                                        // bottom
-                                                                                                                        // space
-                                                                                                                        // for
-                                                                                                                        // icons
+               "right:max(14dlu;pref), 4dlu, left:min(60dlu;pref):grow, pref, 40dlu, pref, pref", "p, 4px, p, 4px");
 
       final PanelBuilder builder = new PanelBuilder(layout);
       final CellConstraints cc = new CellConstraints();
@@ -359,36 +361,40 @@ public final class DiscFindDialog extends AbstractDialog {
     */
    private Object doWork(boolean flagErrorsOnly) {
       Object result = null;
-      final JukesValidationMessage message = new JukesValidationMessage("", Severity.OK);;
+      final JukesValidationMessage message = new JukesValidationMessage("", Severity.OK);
+      ;
       try {
          // clear all old elements out
          listModel.removeAllElements();
 
          // get the directory from the text box
          String directory = this.directory.getText();
-         if (!directory.endsWith(SystemUtils.FILE_SEPARATOR)) { //AZ - ensure path ends with FILE_SEPARATOR
-        	 directory = directory + SystemUtils.FILE_SEPARATOR;
+         if (!directory.endsWith(SystemUtils.FILE_SEPARATOR)) { // AZ - ensure
+                                                                // path ends
+                                                                // with
+                                                                // FILE_SEPARATOR
+            directory = directory + SystemUtils.FILE_SEPARATOR;
          }
-         final File dir = new File(directory); 
+         final File dir = new File(directory);
          // make sure it is a directory
          if ((!dir.isDirectory()) || (!dir.exists())) {
-        	final String errorMessage = ResourceUtils.getString("messages.SelectValidDirectory"); 
+            final String errorMessage = ResourceUtils.getString("messages.SelectValidDirectory");
             LOG.error(errorMessage);
-            MessageUtil.showError(this, errorMessage); //AZ
+            MessageUtil.showError(this, errorMessage); // AZ
             throw new InterruptedException();
          }
-         //AZ get the images directory from Settings
+         // AZ get the images directory from Settings
          if (this.settings.isCopyImagesToDirectory()) {
-         final String imagesDirectory = this.settings.getImagesLocation().getAbsolutePath();
-         final File imagesDir = new File(imagesDirectory);
-         // make sure it is a directory
-         if ((!imagesDir.isDirectory()) || (!imagesDir.exists())) {
-         	final String errorMessage = ResourceUtils.getString("messages.SelectImageDirectory") + imagesDirectory + " " + 
-         								ResourceUtils.getString("messages.DoesntExist"); 
-            LOG.error(errorMessage);
-            MessageUtil.showError(this, errorMessage); //AZ
-            throw new InterruptedException();
-         }
+            final String imagesDirectory = this.settings.getImagesLocation().getAbsolutePath();
+            final File imagesDir = new File(imagesDirectory);
+            // make sure it is a directory
+            if ((!imagesDir.isDirectory()) || (!imagesDir.exists())) {
+               final String errorMessage = ResourceUtils.getString("messages.SelectImageDirectory") + imagesDirectory
+                        + " " + ResourceUtils.getString("messages.DoesntExist");
+               LOG.error(errorMessage);
+               MessageUtil.showError(this, errorMessage); // AZ
+               throw new InterruptedException();
+            }
          }
          // now recursively look for all MP3 directories
          recurseDirectories(dir, flagErrorsOnly);
@@ -401,7 +407,10 @@ public final class DiscFindDialog extends AbstractDialog {
       } catch (InterruptedException e) {
          return result; // SwingWorker.get() returns this
       }
-      message.setMessage(Resources.getString("label.allsubdirectoriesprocessed")); //AZ set final message
+      message.setMessage(Resources.getString("label.allsubdirectoriesprocessed")); // AZ
+                                                                                   // set
+                                                                                   // final
+                                                                                   // message
       updateList(message);
       return result; // or this
 
@@ -425,7 +434,7 @@ public final class DiscFindDialog extends AbstractDialog {
       final Collection discs = HibernateDao.findByQuery(HQL_DISC_LOCATIONS);
 
       for (final Iterator iter = discs.iterator(); iter.hasNext();) {
-         final Object queryResult = (Object) iter.next();
+         final Object queryResult = iter.next();
          mapDiscs.put(queryResult, queryResult);
       }
    }
@@ -440,7 +449,7 @@ public final class DiscFindDialog extends AbstractDialog {
     */
    private void recurseDirectories(final File aDirectory, boolean flagErrorsOnly) throws InterruptedException {
       final String[] files = aDirectory.list(DirectoryFileFilter.INSTANCE);
-      boolean hasSubDirectory = false;//AZ
+      boolean hasSubDirectory = false;// AZ
       if (Thread.interrupted()) {
          LOG.debug("Thread interrupted.");
          throw new InterruptedException();
@@ -450,36 +459,39 @@ public final class DiscFindDialog extends AbstractDialog {
       if (files.length > 0) {
          for (int i = 0; i < files.length; i++) {
             final File f = new File(aDirectory, files[i]);
-            /** AZ - test for hidden directory**/
+            /** AZ - test for hidden directory **/
             if (f.isDirectory() & (!f.isHidden())) {
-               hasSubDirectory = true;	//AZ
+               hasSubDirectory = true; // AZ
                recurseDirectories(f, flagErrorsOnly);
             }
          }
-      } 
-      //AZ  Check current directory for music file (not only the bottom level node)
-         updateProcessing(aDirectory.getAbsolutePath());
-         if (hasDiscAlready(aDirectory.getAbsolutePath())) {
-            return;
-         }
-         /** AZ - Do not update tags in files **/
-         final JukesValidationMessage message = MusicDirectory.loadDiscFromDirectory(aDirectory, false);
-         //AZ: OK and Warning are added only if flagErrorsOnly is not set
-         if (message.getSeverity() == Severity.OK) {
-        	if (!flagErrorsOnly) {
+      }
+      // AZ Check current directory for music file (not only the bottom level
+      // node)
+      updateProcessing(aDirectory.getAbsolutePath());
+      if (hasDiscAlready(aDirectory.getAbsolutePath())) {
+         return;
+      }
+      /** AZ - Do not update tags in files **/
+      final JukesValidationMessage message = MusicDirectory.loadDiscFromDirectory(aDirectory, false);
+      // AZ: OK and Warning are added only if flagErrorsOnly is not set
+      if (message.getSeverity() == Severity.OK) {
+         if (!flagErrorsOnly) {
             message.setMessage(aDirectory.getAbsolutePath());
             updateList(message);
-        	}
-         } else if (message.getSeverity() == Severity.WARNING) {
-        	if ((!flagErrorsOnly) & (!hasSubDirectory)) { //AZ: Warning are added only for bottom level node
+         }
+      } else if (message.getSeverity() == Severity.WARNING) {
+         if ((!flagErrorsOnly) & (!hasSubDirectory)) { // AZ: Warning are added
+                                                       // only for bottom level
+                                                       // node
             message.setMessage(aDirectory.getAbsolutePath());
             updateList(message);
-        	}
-         } else {
-            message.setMessage("ERROR " + aDirectory.getAbsolutePath());
-            updateList(message);
          }
-         hasSubDirectory = false;
+      } else {
+         message.setMessage("ERROR " + aDirectory.getAbsolutePath());
+         updateList(message);
+      }
+      hasSubDirectory = false;
    }
 
    /**
