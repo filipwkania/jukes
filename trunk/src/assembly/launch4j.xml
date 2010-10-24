@@ -1,8 +1,8 @@
 <launch4jConfig>
   <dontWrapJar>false</dontWrapJar>
   <headerType>gui</headerType>
-  <jar>C:\dev\google-code\jukes\target\jukes-4.3.6.52.jar</jar>
-  <outfile>C:\dev\google-code\jukes\target\jukes-4.0.exe</outfile>
+  <jar>.\target\jukes-4.3.6.52.jar</jar>
+  <outfile>.\target\jukes-4.0.exe</outfile>
   <errTitle>Java Error</errTitle>
   <cmdLine></cmdLine>
   <chdir></chdir>
@@ -12,7 +12,7 @@
   <customProcName>true</customProcName>
   <stayAlive>false</stayAlive>
   <manifest></manifest>
-  <icon>C:\dev\melloware\jukes\trunk\src\assembly\note_main.ico</icon>
+  <icon>note_main.ico</icon>
   <singleInstance>
     <mutexName>Jukes</mutexName>
     <windowTitle>Jukes</windowTitle>
