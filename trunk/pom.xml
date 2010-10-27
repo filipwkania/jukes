@@ -4,7 +4,7 @@
   <groupId>com.melloware</groupId>
   <artifactId>jukes</artifactId>
   <packaging>jar</packaging>
-  <version>4.3.6.52</version>
+  <version>4.3.7.53</version>
   <url>http://www.melloware.com</url>
   <name>Jukes</name>
   <description>A cross platform Music Organizer and Player.</description>
