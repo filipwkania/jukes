@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document>
+  <properties>
+    <title>Release Notes</title>
+    <author email="mellowaredev_AT_gmail_DOT_com">Melloware</author>
+  </properties>
+  <body>
+    <release version="4.3.7.53" date="2010-10-27" description="Correction Of Screen Resources">
+      <action dev="mellowaredev@gmail.com" type="fix" due-to="AZ Development" due-to-email="az_development@mail.ru">
+	Added New Resource objects to correct Russian translations
+      </action>
+    </release>
+    <release version="4.3.6.52" date="2010-10-18" description="Google Code Project">
+      <action dev="mellowaredev@gmail.com" type="update"> Migrated source code to Google Code project Jukes</action>
+      <action dev="mellowaredev@gmail.com" type="update"> Updated POM to use more dependencies found on IBiblio like Jasper, Hibernate,
+        HSQLDB, JGoodies</action>
+      <action dev="mellowaredev@gmail.com" type="update"> Minor code cleanup of dead code</action>
+      <action dev="mellowaredev@gmail.com" type="update"> Defaulted the main view to have the Track Playlist instead of Disc playlist
+      </action>
+      <action dev="mellowaredev@gmail.com" type="fix">Fixed maven build to build both Windows and Unix deployments</action>
+    </release>
+    <release version="4.3.6.51" date="2010-10-17" description="Minor Fixes">
+      <action dev="mellowaredev@gmail.com" type="update" due-to="AZ Development" due-to-email="az_development@mail.ru"> Updated: Jasper Reports 3.7.5
+      </action>
+    </release>
+    <release version="4.3.5.50" date="2010-09-03" description="Minor Fixes">
+      <action dev="mellowaredev@gmail.com" type="update" due-to="AZ Development" due-to-email="az_development@mail.ru"> Fixed: Update Tags at Add Disc
+        Dialog</action>
+    </release>
+    <release version="4.3.4.49" date="2010-08-26"
+      description="Implementation of Hibernate 3.5.3, XML-import and export and some minor changes">
+      <action dev="mellowaredev@gmail.com" type="update" due-to="AZ Development" due-to-email="az_development@mail.ru"> Implementation of Hibernate
+        3.5.3-Final release</action>
+      <action dev="mellowaredev@gmail.com" type="update" due-to="AZ Development" due-to-email="az_development@mail.ru"> XML- export and import</action>
+    </release>
+    <release version="4.3.3.48" date="2010-06-30" description="Implementation of HyperSQL 2.0 and some minor changes">
+      <action dev="mellowaredev@gmail.com" type="update" due-to="AZ Development" due-to-email="az_development@mail.ru"> small modifications</action>
+      <action dev="mellowaredev@gmail.com" type="update" due-to="AZ Development" due-to-email="az_development@mail.ru"> New id3v24 processing</action>
+      <action dev="mellowaredev@gmail.com" type="update" due-to="AZ Development" due-to-email="az_development@mail.ru"> hsqldb 2.0.0</action>
+      <action dev="mellowaredev@gmail.com" type="update" due-to="AZ Development" due-to-email="az_development@mail.ru"> disclist table optimization
+      </action>
+      <action dev="mellowaredev@gmail.com" type="update" due-to="AZ Development" due-to-email="az_development@mail.ru"> database update optimization
+      </action>
+    </release>
+    <release version="4.3.2.47" date="2010-04-30" description="Multilingual Help, APE-files processing and some minor changes">
+      <action dev="mellowaredev@gmail.com" type="update" due-to="AZ Development" due-to-email="az_development@mail.ru"> Multilingual Help; English and
+        Russian topics available</action>
+      <action dev="mellowaredev@gmail.com" type="update" due-to="AZ Development" due-to-email="az_development@mail.ru"> APE-files processing</action>
+      <action dev="mellowaredev@gmail.com" type="update" due-to="AZ Development" due-to-email="az_development@mail.ru"> Spectrum Analyzer is suspended
+      </action>
+      <action dev="mellowaredev@gmail.com" type="update" due-to="AZ Development" due-to-email="az_development@mail.ru"> Volume control is added</action>
+    </release>
+    <release version="4.3.1.46" date="2010-03-12" description="FreeDB search, export to XML and some minor changes">
+      <action dev="mellowaredev@gmail.com" type="update" due-to="AZ Development" due-to-email="az_development@mail.ru"> FreeDB search</action>
+      <action dev="mellowaredev@gmail.com" type="update" due-to="AZ Development" due-to-email="az_development@mail.ru"> Export of DataBase to XML file
+      </action>
+    </release>
+    <release version="4.3.0.45" date="2010-02-28" description="New version of Amazon search,  and some minor changes">
+      <action dev="mellowaredev@gmail.com" type="update" due-to="AZ Development" due-to-email="az_development@mail.ru"> New version of Amazon search
+      </action>
+      <action dev="mellowaredev@gmail.com" type="update" due-to="AZ Development" due-to-email="az_development@mail.ru"> Catalog Export - export in UTF-8
+        . Additional fields are added : year, genre, bitrate, location</action>
+      <action dev="mellowaredev@gmail.com" type="update" due-to="AZ Development" due-to-email="az_development@mail.ru"> Bitrate report - added report
+        parameters : "From", "To"; New report design</action>
+      <action dev="mellowaredev@gmail.com" type="update" due-to="AZ Development" due-to-email="az_development@mail.ru"> Albums for Artist report - added
+        Dialog to select Artist</action>
+    </release>
+    <release version="4.2.0.44" date="2009-12-20" description="List of discs, Jukes portability and some minor fixes">
+      <action dev="mellowaredev@gmail.com" type="update" due-to="AZ Development" due-to-email="az_development@mail.ru"> New functionality: List of discs
+      </action>
+      <action dev="mellowaredev@gmail.com" type="update" due-to="AZ Development" due-to-email="az_development@mail.ru"> Add Single Track options added
+      </action>
+      <action dev="mellowaredev@gmail.com" type="update" due-to="AZ Development" due-to-email="az_development@mail.ru"> Add Single Disc: Promt to select
+        directory instead of track</action>
+      <action dev="mellowaredev@gmail.com" type="update" due-to="AZ Development" due-to-email="az_development@mail.ru"> Multi-Lingual Error Messaging
+        System</action>
+      <action dev="mellowaredev@gmail.com" type="update" due-to="AZ Development" due-to-email="az_development@mail.ru"> Jukes portability added: All
+        LOG-files are redirected to /log/ subdirectory in current Application directory; All default directories are
+        redirected to current Application directory; All preferences are stored in jukes.xml file in current Application
+        directory (System Register entry is used for compatibility);</action>
+      <action dev="mellowaredev@gmail.com" type="update" due-to="AZ Development" due-to-email="az_development@mail.ru"> Find and Add All discs mode:
+        optimization of subdirectory recursing</action>
+    </release>
+    <release version="4.2.0.43" date="2009-09-20" description="Russian">
+      <action dev="mellowaredev@gmail.com" type="update" due-to="AZ Development" due-to-email="az_development@mail.ru"> New multilingual resources.
+      </action>
+      <action dev="mellowaredev@gmail.com" type="update" due-to="AZ Development" due-to-email="az_development@mail.ru"> Filter panel: Artist and Disc
+        filters are added to Filter panel. Exact Match flag is added to Filter panel.</action>
+      <action dev="mellowaredev@gmail.com" type="update" due-to="AZ Development" due-to-email="az_development@mail.ru"> Preferences: To speed up main
+        tree initialisation new flag is added to Preferences - Show main tree by default. With this flag user can hide
+        main tree and show filtered tree only.</action>
+      <action dev="mellowaredev@gmail.com" type="update" due-to="AZ Development" due-to-email="az_development@mail.ru"> Preferences: New "Update Audio
+        Tags in files" flag is added to Preferences to allow user change database info without changing tags in music
+        files.</action>
+      <action dev="mellowaredev@gmail.com" type="update" due-to="AZ Development" due-to-email="az_development@mail.ru"> Preferences: Check Genres tools
+        is added to check genres of all discs for compliance with standard table of music genres.</action>
+      <action dev="mellowaredev@gmail.com" type="update" due-to="AZ Development" due-to-email="az_development@mail.ru"> Preferences: New option added to
+        allow copying covers from discs directories to selected directory. It allows to show covers even when external
+        discs are not connected.</action>
+      <action dev="mellowaredev@gmail.com" type="update" due-to="AZ Development" due-to-email="az_development@mail.ru"> Tag processing: Album Artist
+        field is used for compilation albums. Appropriate parameter is added to Preferences.</action>
+      <action dev="mellowaredev@gmail.com" type="update" due-to="AZ Development" due-to-email="az_development@mail.ru"> Tag processing: Disc Number and
+        Total Discs fields are used to process boxsets.</action>
+      <action dev="mellowaredev@gmail.com" type="update" due-to="AZ Development" due-to-email="az_development@mail.ru"> Preferences: New flag "Show Empty
+        Node In Tree" is added to Preferences to allow user to show artists without discs.</action>
+      <action dev="mellowaredev@gmail.com" type="update" due-to="AZ Development" due-to-email="az_development@mail.ru"> New reports added - -Genres
+        report to show all genres in Catalog. -Catalog by genres report -All Discs for selected Artist report.</action>
+      <action dev="mellowaredev@gmail.com" type="update" due-to="AZ Development" due-to-email="az_development@mail.ru">
+        Genres: Complicated descriptions of genres are allowed. Descriptions of genres must be of following format
+      </action>
+      <action dev="mellowaredev@gmail.com" type="update" due-to="AZ Development" due-to-email="az_development@mail.ru"> Playlists: - adding a few
+        selected discs and artists to playlist - re-paint empty playlist after playlist clearance - GoTo button for tree
+        with active filter -playlist clearance - deleting current track</action>
+      <action dev="mellowaredev@gmail.com" type="update" due-to="AZ Development" due-to-email="az_development@mail.ru"> Search tools : - Select button
+        for tree with active filter</action>
+      <action dev="mellowaredev@gmail.com" type="update" due-to="AZ Development" due-to-email="az_development@mail.ru"> Find discs: - "Errors only" flag
+        is added ti allow user to hide all message except errors messages. - "All subdirectories successfully processed"
+        message added to indicate the and of process. - System and hidden directories processing error was corrected
+        -"readonly" files processing error was corrected</action>
+      <action dev="mellowaredev@gmail.com" type="update" due-to="AZ Development" due-to-email="az_development@mail.ru"> TCON (genre) tag processing: -
+        iTunes-style tag "(NNN)" processing is added</action>
+      <action dev="mellowaredev@gmail.com" type="update" due-to="AZ Development" due-to-email="az_development@mail.ru"> Cover processing: -Smooth scaling
+        added</action>
+      <action dev="mellowaredev@gmail.com" type="update" due-to="AZ Development" due-to-email="az_development@mail.ru"> Year tag processing: -If no Year
+        is specified in tags then "9999" year is used instead of current year as it was in previous version.</action>
+      <action dev="mellowaredev@gmail.com" type="update" due-to="AZ Development" due-to-email="az_development@mail.ru"> DiscEditor: -Option for changing
+        Artists for selected disc is added.</action>
+      <action dev="mellowaredev@gmail.com" type="update" due-to="AZ Development" due-to-email="az_development@mail.ru"> TrackEditor: -Disc is
+        automatically deleted if all track are deleted for this disc.</action>
+    </release>
+    <release version="4.1.2.42" date="2008-11-14" description="Russian">
+      <action dev="mellowaredev@gmail.com" type="update" due-to="AZ Development" due-to-email="az_development@mail.ru"> Updated Russian Translation
+      </action>
+    </release>
+    <release version="4.1.2.41" date="2008-07-07" description="Library Updates">
+      <action dev="mellowaredev@gmail.com" type="update" due-to="Greg Welc" due-to-email="gwelc@comcast.net"> Updated JFlac library to 1.3 because
+        of freezing issues in 1.2</action>
+      <action dev="mellowaredev@gmail.com" type="fix"> Fixed connection pooling to C3P0 in Hibernate and NoCacheProvider.
+      </action>
+      <action dev="mellowaredev@gmail.com" type="update"> Updated JIntellitype to version 1.3.1</action>
+      <action dev="mellowaredev@gmail.com" type="update"> Updated various other libraries</action>
+    </release>
+    <release version="4.1.1.40" date="2008-05-20" description="Translations">
+      <action dev="mellowaredev@gmail.com" type="fix" due-to="Michael Caletka" due-to-email="michael.caletka@gmail.com"> Fixed Bug with images in
+        JasperReports.</action>
+      <action dev="mellowaredev@gmail.com" type="fix"> Fixed NullpointerException when setting playlist to shuffle with no songs
+        in list.</action>
+      <action dev="mellowaredev@gmail.com" type="add" due-to="Sung Hee Lee" due-to-email=""> Korean Language Translation.</action>
+      <action dev="mellowaredev@gmail.com" type="add" due-to="Aroon Damanik" due-to-email="damanik@bluebottle.com"> Indonesian Language Translation.
+      </action>
+      <action dev="mellowaredev@gmail.com" type="add" due-to="Arild Hansen" due-to-email="arild.hansen@start.no"> Norwegian Language Translation.
+      </action>
+      <action dev="mellowaredev@gmail.com" type="add" due-to="Thierry Delaunay" due-to-email="traducted@gmail.com"> French Language Translation.
+      </action>
+      <action dev="mellowaredev@gmail.com" type="update"> Updated HSQLDB to 1.8.0.9.</action>
+    </release>
+    <release version="4.1.1.39" date="2008-01-24" description="JIntellitype Fixed, Spanish Translation">
+      <action dev="mellowaredev@gmail.com" type="fix"> Updated JIntellitype to version 1.3 which fixes race condition in DLL.
+      </action>
+      <action dev="mellowaredev@gmail.com" type="fix"> Fixed many minor issues caught by Findbugs.</action>
+      <action dev="mellowaredev@gmail.com" type="add"> Added call to JIntellitype.isJIntellitypeSupported to make sure it won't try
+        and load on a 64 bit OS or a non-Windows OS.</action>
+      <action dev="mellowaredev@gmail.com" type="add" due-to="Gelo" due-to-email="gelotron@gmail.com"> Spanish Language translation.</action>
+      <action dev="mellowaredev@gmail.com" type="add"> As part of the Common Jukebox project Jukes will look for a Music folder
+        at ./Music on first startup and add the music there.</action>
+    </release>
+    <release version="4.1.1.38" date="2008-01-02" description="Vista Fix, Amazon Updated">
+      <action dev="mellowaredev@gmail.com" type="add" due-to="Greg Welc" due-to-email="gwelc@comcast.net"> Added tooltip to playlist when hovering
+        shows you artist - album - track - duration</action>
+      <action dev="mellowaredev@gmail.com" type="add"> Added Vista manifest to EXE to allow User Access Control to run at highest
+        privileges. This is required to run Jukes under Vista properly.</action>
+      <action dev="mellowaredev@gmail.com" type="fix" due-to="Larry Morroni" due-to-email="larry@morroni.com"> Fixed bug in global tag replacer in
+        Disc Finder not updating album titles.</action>
+      <action dev="mellowaredev@gmail.com" type="fix" due-to="Greg Welc" due-to-email="gwelc@comcast.net"> When adding albums with more than 100
+        tracks pad with 3 digits.</action>
+      <action dev="mellowaredev@gmail.com" type="fix"> Fixed problem if Jukes was already running not shutting down new instance.
+      </action>
+      <action dev="mellowaredev@gmail.com" type="update"> Updated Amazon Web service to latest version and removed Axis for HttpClient.
+        This makes the searching more accurate, faster, and decreases the size of the executable.</action>
+      <action dev="mellowaredev@gmail.com" type="update">JAudioTagger library to 1.0.8</action>
+      <action dev="mellowaredev@gmail.com" type="update">Nimrod LF to 1.0.b</action>
+      <action dev="mellowaredev@gmail.com" type="remove">REMOVED: Hibernate caching to improve memory usage.</action>
+      <action dev="mellowaredev@gmail.com" type="remove">REMOVED: Entagged and ehCache JARS as dependencies.</action>
+      <action dev="mellowaredev@gmail.com" type="remove">REMOVED: Napkin Look and Feel. Too buggy, slow, and bloated.</action>
+    </release>
+    <release version="4.1.0.37" date="2007-09-04" description="Minor Fixes">
+      <action dev="mellowaredev@gmail.com" type="update"> Hibernate library to 3.2.5.ga</action>
+      <action dev="mellowaredev@gmail.com" type="update"> HSQLDB library to 1.8.0.8</action>
+      <action dev="mellowaredev@gmail.com" type="update"> Donation redirect right to Paypal page.</action>
+    </release>
+    <release version="4.1.0.36" date="2007-08-01" description="Minor Fixes">
+      <action dev="mellowaredev@gmail.com" type="fix" due-to="Szabolcs Horvat" due-to-email="szhorvat@gmail.com"> Fixed milliseconds in XSPF files.
+      </action>
+      <action dev="mellowaredev@gmail.com" type="update"> Nimrod LF library to version 0.9.9 for JDK 16</action>
+      <action dev="mellowaredev@gmail.com" type="update"> L2FProd library to version 7.3</action>
+    </release>
+    <release version="4.1.0.35" date="2007-06-08" description="German Translation">
+      <action dev="mellowaredev@gmail.com" type="fix" due-to="Michael Caletka" due-to-email="michael.caletka@gmail.com"> German translation now included if
+        your JRE is set to German it will display in German.</action>
+      <action dev="mellowaredev@gmail.com" type="update"> JAudiotagger library to version 1.0.5</action>
+      <action dev="mellowaredev@gmail.com" type="update"> Hibernate library to version 3.2.4.ga</action>
+    </release>
+    <release version="4.1.0.34" date="2007-03-10" description="ID3 Tag Fixes">
+      <action dev="mellowaredev@gmail.com" type="fix" due-to="Greg Welc" due-to-email="gwelc@comcast.net"> Common "InputLength = 1" error and many
+        other ID3 Tag errors now fixed with latest JAudiotagger</action>
+      <action dev="mellowaredev@gmail.com" type="add" due-to="Larry Morroni" due-to-email="larry@morroni.com"> Ability to perform Difference Tool
+        case insensitively.</action>
+      <action dev="mellowaredev@gmail.com" type="update"> JAudiotagger library to version 1.0.4</action>
+      <action dev="mellowaredev@gmail.com" type="update"> Commons Lang library to version 2.3</action>
+      <action dev="mellowaredev@gmail.com" type="update"> Commons IO library to version 1.3.1</action>
+      <action dev="mellowaredev@gmail.com" type="update"> Hibernate library to version 3.2.2.ga</action>
+    </release>
+    <release version="4.1.0.33" date="2007-02-07" description="Bitrate Report">
+      <action dev="mellowaredev@gmail.com" type="add"> Added new report to display all albums with a bitrate less than a certain value
+      </action>
+      <action dev="mellowaredev@gmail.com" type="fix"> FINALLY fixed GUI lockup problem.</action>
+    </release>
+    <release version="4.1.0.32" date="2007-01-30" description="Minor Fixes">
+      <action dev="mellowaredev@gmail.com" type="add" due-to="Top Gear" due-to-email="topgear_3000gt@hotmail.com"> Added a Clear Playlist option to the
+        playlist</action>
+      <action dev="mellowaredev@gmail.com" type="add" due-to="Top Gear" due-to-email="topgear_3000gt@hotmail.com"> Added preference for Spectrum Analyzer
+        Mode. Either Off, Analyzer, or Scope.</action>
+      <action dev="mellowaredev@gmail.com" type="add" due-to="Larry Morroni" due-to-email="larry@morroni.com"> Added KDE and Gnome desktop icons in
+        the Unix.zip file to use in those environments.</action>
+      <action dev="mellowaredev@gmail.com" type="fix" due-to="Top Gear" due-to-email="topgear_3000gt@hotmail.com"> Added some more checks for GUI lockups
+        when adding songs to an empty playlist.</action>
+      <action dev="mellowaredev@gmail.com" type="fix"> Fixed rare bug where if you had the last song selected and track changed and
+        then you tried to remove that track from your playlist.</action>
+      <action dev="mellowaredev@gmail.com" type="update">Updated copyright year to 1999-2007</action>
+      <action dev="mellowaredev@gmail.com" type="update">Updated JGoodies Looks 2.1.2 which fixes native icons in File Open dialog.
+      </action>
+      <action dev="mellowaredev@gmail.com" type="remove">REMOVED: Custom TableSorter for Java 6 TableRowSorter.</action>
+    </release>
+    <release version="4.1.0.31" date="2007-01-11" description="Reports Added">
+      <action dev="mellowaredev@gmail.com" type="add" due-to="Matt Farkas" due-to-email="mfarkas@isdinc.com"> Added Catalog report and Albums Missing
+        Cover Artwork reports under Reports menu.</action>
+      <action dev="mellowaredev@gmail.com" type="fix" due-to="Matt Farkas" due-to-email="mfarkas@isdinc.com"> Fixed issue on some Windows machines
+        with System Clock speeding up.</action>
+      <action dev="mellowaredev@gmail.com" type="fix"> Fixed GUI lockup and freeze issues (I think).</action>
+      <action dev="mellowaredev@gmail.com" type="fix" due-to="Stefan Gruenig" due-to-email="stefan.greunig@fugu.ch"> Fixed problem with Directory Chooser
+        if you renamed directory on file system.</action>
+      <action dev="mellowaredev@gmail.com" type="fix" due-to="Stefan Gruenig" due-to-email="stefan.greunig@fugu.ch"> Fixed problem deleting or refreshing
+        a disc with a Track that has been removed.</action>
+      <action dev="mellowaredev@gmail.com" type="fix">Switched to Java 6 TrayIcon</action>
+      <action dev="mellowaredev@gmail.com" type="fix">Right click menu on TrayIcon now works under Linux Gnome and KDE</action>
+      <action dev="mellowaredev@gmail.com" type="fix" due-to="Top Gear" due-to-email="topgear_3000gt@hotmail.com"> Fixed Linux tray icon sizes to 24x24 for
+        KDE to look right on both Windows and Linux.</action>
+      <action dev="mellowaredev@gmail.com" type="update" due-to="Greg Welc" due-to-email="gwelc@comcast.net"> Now displaying error when trying to
+        play Layer I MP3 files that Javazoom player does not like.</action>
+      <action dev="mellowaredev@gmail.com" type="update"> Updated to JIntellitype 1.2 to handle only ONE instance of app on
+        Windows.</action>
+      <action dev="mellowaredev@gmail.com" type="remove">REMOVED: com.jeans.trayicon and DLL. Now using JDK 6 trayicon</action>
+    </release>
+    <release version="4.1.0.30" date="2007-01-02" description="Java 6 required">
+      <action dev="mellowaredev@gmail.com" type="add">Java 6 is the minimum version required going forward</action>
+      <action dev="mellowaredev@gmail.com" type="add">Tray Icon under Linux/Unix.(only pause, play, next song functionality)</action>
+      <action dev="mellowaredev@gmail.com" type="update">Updated Look 2.1.1 which has Windows Vista and Java 6 UI improvements</action>
+      <action dev="mellowaredev@gmail.com" type="update">Added DLL's to unix version in case user wants to run JAR version on Windows
+      </action>
+      <action dev="mellowaredev@gmail.com" type="update">Updated Hibernate 3.2.1.ga</action>
+      <action dev="mellowaredev@gmail.com" type="update">Updated JIntellitype to 1.1</action>
+      <action dev="mellowaredev@gmail.com" type="fix">Fixed bug in tree search introduced by Looks 2.1.1</action>
+      <action dev="mellowaredev@gmail.com" type="fix" due-to="Larry Morroni" due-to-email="larry@morroni.com"> Only start playing song when queuing
+        into playlist when the playlist is empty.</action>
+      <action dev="mellowaredev@gmail.com" type="fix" due-to="Larry Morroni" due-to-email="larry@morroni.com"> Save the current song playing in the
+        playlist when Saving Playlist.</action>
+      <action dev="mellowaredev@gmail.com" type="fix" due-to="Greg Welc" due-to-email="gwelc@comcast.net"> When clicking on the spectrum analyzer it
+        would not turn off.</action>
+      <action dev="mellowaredev@gmail.com" type="fix" due-to="Greg Welc" due-to-email="gwelc@comcast.net"> Right clicking on the tree view left
+        everything selected.</action>
+      <action dev="mellowaredev@gmail.com" type="remove">Removed BrowserLauncher code and now uses Java 6 Desktop API to launch URLs
+      </action>
+    </release>
+    <release version="4.0.5.29" date="2006-11-21" description="Last Java 5 version">
+      <action dev="mellowaredev@gmail.com" type="fix" due-to="Greg Welc" due-to-email="gwelc@comcast.net"> When playing FLAC files the tooltip on
+        the Windows icon was null-null.</action>
+      <action dev="mellowaredev@gmail.com" type="update">Updated SpectrumAnalyzer based on jlgui code version 3.0</action>
+      <action dev="mellowaredev@gmail.com" type="update">Fixed Hibernate problem when deleting an album after editing it.</action>
+      <action dev="mellowaredev@gmail.com" type="update">Updated for JDK1.5 warnings</action>
+    </release>
+    <release version="4.0.4.28" date="2006-11-05" description="Minor Upgrade">
+      <action dev="mellowaredev@gmail.com" type="update">Updated Hibernate to 3.2 GA Release.</action>
+      <action dev="mellowaredev@gmail.com" type="fix" due-to="Ben Bustard" due-to-email="ben@cbccinc.com"> When shuffling playlist, Play Immediate
+        would just queue it in the list.</action>
+      <action dev="mellowaredev@gmail.com" type="add">Added Napkin Look and Feel.</action>
+      <action dev="mellowaredev@gmail.com" type="update">Updated L2Fprod after fixing Napkin look and feel bug.</action>
+      <action dev="mellowaredev@gmail.com" type="update">Updated Jaudiotagger to 1.0.3.</action>
+    </release>
+    <release version="4.0.3.27" date="2006-10-12" description="Major Library Upgrades">
+      <action dev="mellowaredev@gmail.com" type="add">Added Squareness Look and Feel.</action>
+      <action dev="mellowaredev@gmail.com" type="add">Added NimROD Look and Feel.</action>
+      <action dev="mellowaredev@gmail.com" type="add">Added Substance Look and Feel.</action>
+      <action dev="mellowaredev@gmail.com" type="update">Updated JGoodies to 1.5.0.</action>
+      <action dev="mellowaredev@gmail.com" type="update">Updated Commons Lang to 2.2</action>
+      <action dev="mellowaredev@gmail.com" type="update"> Proper handling of FLAC files. FLAC Icon in tree. Flacs play correctly.
+      </action>
+      <action dev="mellowaredev@gmail.com" type="update"> Proper handling of OGG files. OGG Icon in tree. OGGs play correctly.</action>
+      <action dev="mellowaredev@gmail.com" type="remove"> Removed ANNOTATION from XSPF playlists, its useless and just adds file size
+      </action>
+      <action dev="mellowaredev@gmail.com" type="fix" due-to="Larry Morroni" due-to-email="larry@morroni.com"> Fixed problem with special characters
+        in XSPF playlists that were not UTF-8.</action>
+      <action dev="mellowaredev@gmail.com" type="fix"> Fixed ClassCastException on Statistics Dialog caused by Hibernate upgrade.
+      </action>
+      <action dev="mellowaredev@gmail.com" type="fix">Fixed problem with double error dialogs if there was a Player error.</action>
+    </release>
+    <release version="4.0.2.26" date="2006-10-04" description="JSpiff, Entagged, APE, SPEEX Added">
+      <action dev="mellowaredev@gmail.com" type="add">Added new JSpiff library to handle XSPF playlists</action>
+      <action dev="mellowaredev@gmail.com" type="add">Added new Entagged library to handle OGG and FLAC tags</action>
+      <action dev="mellowaredev@gmail.com" type="remove">Removed old XSPF code and replaced with JSpiff</action>
+      <action dev="mellowaredev@gmail.com" type="update">Updated HSQLDB to 1.8.0.7 and Log4j to 1.2.14</action>
+      <action dev="mellowaredev@gmail.com" type="fix">Rendering of search dialog did not look right.</action>
+    </release>
+    <release version="4.0.1.25" date="2006-09-25" description="Updated Licenses">
+      <action dev="mellowaredev@gmail.com" type="update">Updated Hibernate versions.</action>
+      <action dev="mellowaredev@gmail.com" type="fix"> Fixed many libraries to now include their licenses on the Project Dependencies
+        page.</action>
+      <action dev="mellowaredev@gmail.com" type="fix"> Fixed Jukes license to be proprietary Creative Commons
+        Attribution-NonCommercial-NoDerivs 2.5.</action>
+    </release>
+    <release version="4.0.1.24" date="2006-09-19" description="First Official Release">
+      <action dev="mellowaredev@gmail.com" type="add"> WINDOWS ONLY: Added JIntellitype to listen for Intellitype keyboard commands
+        like Winamp and Windows Media Player.</action>
+      <action dev="mellowaredev@gmail.com" type="add"> WINDOWS ONLY: Added global hotkey WINDOWS+J to bring up the Window even if it
+        is minimized to the tray and hide it if it is showing.</action>
+      <action dev="mellowaredev@gmail.com" type="fix"> Fixed bug when Queue Next from the treeview inserting the list backwards.
+      </action>
+      <action dev="mellowaredev@gmail.com" type="fix" due-to="Greg Welc" due-to-email="gwelc@comcast.net"> Fixed previous to go back to the
+        beginning of the song, but if within 2 seconds goes to the previous track.</action>
+      <action dev="mellowaredev@gmail.com" type="update" due-to="Tom Cockerline" due-to-email="tcockerline@gmail.com"> Updated Jaudiotagger which fixes
+        problem with POPM frames in ID3V2.3 tags.</action>
+      <action dev="mellowaredev@gmail.com" type="update" due-to="Larry Morroni" due-to-email="larry@morroni.com"> Updated splash screen, no album
+        image, and website graphics.</action>
+    </release>
+    <release version="4.0.0.5" date="2005-12-23" description="Initial BETA Version">
+      <action dev="mellowaredev@gmail.com" type="add">Initial release to BETA testers.</action>
+    </release>
+  </body>
+</document>

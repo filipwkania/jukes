@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<document>
+  <properties>
+    <title>Screenshots</title>
+    <author email="info.AT.melloware.DOT.com">Emil A Lefkof III</author>
+  </properties>
+  <body>
+    <section name="Screenshots">
+    <p>The Main Window</p>
+    <img alt="Main Window" src="./images/main.jpg"/>
+    
+    <p>The Main Window showing a disc view.</p>
+    <img alt="Main Window" src="./images/main2.jpg"/>
+    
+    <p>The Main Window with playlist and filter closed and showing Track view.</p>
+    <img alt="Main Window" src="./images/main3.jpg"/>
+    
+    <p>Adding a new disc.</p>
+    <img alt="New Disc" src="./images/discadd.jpg"/>
+    
+    <p>Searching the database.</p>
+    <img alt="Search" src="./images/search.jpg"/>
+    
+    <p>Searching Amazon.com web service for disc info.</p>
+    <img alt="Search Web" src="./images/websearch.jpg"/>
+    
+    <p>Some statistics gathered on your catalog.</p>
+    <img alt="Search Web" src="./images/stats.jpg"/>
+    
+    <p>Using Lipstik Look And Feel</p>
+    <img alt="Lipstick" src="./images/liptsik.jpg"/>
+    
+    </section>
+  </body>
+</document>

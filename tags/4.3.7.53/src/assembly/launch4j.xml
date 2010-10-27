@@ -1,0 +1,40 @@
+<launch4jConfig>
+  <dontWrapJar>false</dontWrapJar>
+  <headerType>gui</headerType>
+  <jar>.\target\jukes-4.3.6.52.jar</jar>
+  <outfile>.\target\jukes-4.0.exe</outfile>
+  <errTitle>Java Error</errTitle>
+  <cmdLine></cmdLine>
+  <chdir></chdir>
+  <priority>high</priority>
+  <downloadUrl>http://java.com/download</downloadUrl>
+  <supportUrl></supportUrl>
+  <customProcName>true</customProcName>
+  <stayAlive>false</stayAlive>
+  <manifest></manifest>
+  <icon>note_main.ico</icon>
+  <singleInstance>
+    <mutexName>Jukes</mutexName>
+    <windowTitle>Jukes</windowTitle>
+  </singleInstance>
+  <jre>
+    <path></path>
+    <minVersion>1.6.0</minVersion>
+    <maxVersion></maxVersion>
+    <jdkPreference>preferJre</jdkPreference>
+    <initialHeapSize>128</initialHeapSize>
+    <maxHeapSize>512</maxHeapSize>
+  </jre>
+  <versionInfo>
+    <fileVersion>4.1.0.38</fileVersion>
+    <txtFileVersion>4.0</txtFileVersion>
+    <fileDescription>Jukes cross platform music player and organizer.</fileDescription>
+    <copyright>1999-2010 Melloware Inc.</copyright>
+    <productVersion>4.1.0.38</productVersion>
+    <txtProductVersion>4.0</txtProductVersion>
+    <productName>Jukes</productName>
+    <companyName>Melloware</companyName>
+    <internalName>Jukes</internalName>
+    <originalFilename>jukes-4.0.exe</originalFilename>
+  </versionInfo>
+</launch4jConfig>

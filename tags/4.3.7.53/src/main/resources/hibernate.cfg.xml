@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+    <session-factory>
+        <property name="hibernate.bytecode.use_reflection_optimizer">true</property>
+        <property name="hibernate.connection.driver_class">org.hsqldb.jdbcDriver</property>
+        <property name="hibernate.connection.url">jdbc:hsqldb:hsql://localhost/jukes</property>
+        <property name="hibernate.connection.username">sa</property>
+        <property name="hibernate.connection.password"></property>
+        <property name="hibernate.dialect">org.hibernate.dialect.HSQLDialect</property>
+        
+        <!-- Use the C3P0 connection pool. -->
+        <property name="c3p0.minPoolSize">1</property>
+        <property name="c3p0.maxPoolSize">5</property>
+        <property name="c3p0.checkoutTimeout">1800</property>
+        
+        <!-- Disable second-level cache. -->
+        <property name="cache.provider_class">org.hibernate.cache.NoCacheProvider</property>
+        <property name="cache.use_query_cache">false</property>
+        <property name="cache.use_minimal_puts">false</property>
+        <property name="hibernate.cache.use_second_level_cache">false</property>
+        <property name="max_fetch_depth">3</property>
+ 
+        <!-- AuditInterceptor created just once and set globally here -->
+        <property name="hibernate.util.interceptor_class">com.melloware.jukes.db.audit.AuditInterceptor</property>
+        
+        <mapping resource="com/melloware/jukes/db/orm/Artist.hbm.xml" />
+        <mapping resource="com/melloware/jukes/db/orm/Disc.hbm.xml" />
+        <mapping resource="com/melloware/jukes/db/orm/Track.hbm.xml" />
+        
+        <!-- Create or update the database schema on startup 
+        <property name="hbm2ddl.auto">update</property>
+        -->
+
+        <!-- Echo all executed SQL to stdout 
+          <property name="show_sql">true</property>
+          <property name="format_sql">true</property>
+        -->
+
+    </session-factory>
+</hibernate-configuration>
