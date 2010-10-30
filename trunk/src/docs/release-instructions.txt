@@ -5,6 +5,6 @@ Jukes Release Instructions
 
 2. Fix changes.xml to have correct version and date
 
-3. mvn clean package antrun:run -Dprod
+3. mvn clean package -Dprod (builds both ZIP file distributions)
 
-4. mvn site -Dprod
+4.  mvn site -Dprod (if building website)
