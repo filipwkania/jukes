@@ -5,6 +5,14 @@
     <author email="mellowaredev_AT_gmail_DOT_com">Melloware</author>
   </properties>
   <body>
+    <release version="4.3.8.54" date="2010-10-27" description="Minor Fixes">
+      <action dev="mellowaredev@gmail.com" type="fix" due-to="AZ Development" due-to-email="az.dvlpmnt@gmail.com">
+	Corrected SQL query for YEAR-filter
+      </action>
+      <action dev="mellowaredev@gmail.com" type="fix" due-to="AZ Development" due-to-email="az.dvlpmnt@gmail.com">
+	Corrected Validation method for disc.genre
+      </action>
+    </release>
     <release version="4.3.7.53" date="2010-10-27" description="Correction Of Screen Resources">
       <action dev="mellowaredev@gmail.com" type="fix" due-to="AZ Development" due-to-email="az_development@mail.ru">
 	Added New Resource objects to correct Russian translations
