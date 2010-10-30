@@ -170,11 +170,11 @@ public final class FilterPanel extends ComplexInternalFrame implements ActionLis
          }
          if (StringUtils.isNotBlank(yearField1.getText())) {
             if (StringUtils.isBlank(yearField2.getText())) {
-               query = query + " and disc.year " + operatorYear.getSelectedItem().toString()
-                        + StringEscapeUtils.escapeSql(yearField1.getText());
+               query = query + " and disc.year " + operatorYear.getSelectedItem().toString()  
+                        + "'" + StringEscapeUtils.escapeSql(yearField1.getText()) + "'";  //AZ: add QUOTATION MARK: 'year'
             } else {
-               query = query + " and disc.year between " + StringEscapeUtils.escapeSql(yearField1.getText()) + " and "
-                        + StringEscapeUtils.escapeSql(yearField2.getText());
+               query = query + " and disc.year between " + "'" + StringEscapeUtils.escapeSql(yearField1.getText()) + "'"
+               			+ " and " + "'" + StringEscapeUtils.escapeSql(yearField2.getText()) + "'";
             }
          }
          if (bitrateField.getSelectedItem() != null) {
