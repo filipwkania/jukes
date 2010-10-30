@@ -1,0 +1,90 @@
+<?xml version="1.0"?>
+<document>
+  <properties>
+    <title>Remote Connection</title>
+    <author email="info.AT.melloware.DOT.com">Emil A Lefkof III</author>
+  </properties>
+  <body>
+    <section name="Remote Connection">
+       <p>
+       This document describes how to connect all of your machines on you network to the same database
+       and share the same music.  
+       </p>
+       
+       <p>
+       <strong>NOTE:</strong> These instructions are Windows-centric but should work on other
+       platforms just in a OS specific way of sharing data.  
+       </p>
+      
+      <subsection name="Step 1">
+        <p>
+          First you must share your music collection so it is available to other users on your network.
+          Example, on Windows, right click on your music folder and select Properties->Sharing.
+        </p>
+        
+        <p>
+           Make sure you can see the music by connecting to that share from another machine on your network
+           using the network notation.  On Windows, you would connect to <code>\\(machine name)\\music</code> where
+           (machine name) was the name of your shared machine, and music is the directory shared.  NOTE: The rest of this 
+           document will assume a hypothetical (machine name) called JUKEZ.
+        </p>
+      </subsection>
+      
+      <subsection name="Step 2">
+        <p>
+          In the Jukes use the Location Change tool in Tools->Location Change.  Change your entire database from where
+          the music was located, to the network share name.  Example, if your music was in <code>C:\music</code> and you shared that folder
+          on you machine named JUKEZ it would be <code>\\JUKEZ\music</code>.  You would do a Location Change and change <code>C:\</code> to <code>\\JUKES\</code>.
+          This will fix your entire database to point at the files as a network share rather than hardcoded drive letter.
+        </p>
+        
+        <p>
+          Don't forget to change your Prefences->Music Directory to \\JUKEZ\music from C:\music so new albums added will be
+          added with the shared directory notation.
+        </p>
+        
+        <p>
+          To check if it is correct.  Just click on an album, if it shows up in RED, then it cannot find the album.
+        </p>
+      </subsection>
+      
+      <subsection name="Step 3">
+        <p>
+          The next step is configuring your server.  To find out your server's IP
+          address just go to a command promt and type <code>ipconfig</code>.  To get to a command prompt on Windows just
+          select Start->Run and type <code>command</code>.  Typing <code>ipconfig</code> will display your IP address such as
+          <strong>192.168.1.100</strong>.  Now that you have the IP address make sure the Jukes is running on the JUKEZ server.
+        </p>
+      </subsection>
+      
+      <subsection name="Step 4">
+        <p>
+          The next step is connecting to your server from another machine on your network.  From another machine on your
+          network make sure you can see the JUKEZ server by executing <code>ping 192.168.1.100</code> from the command
+          prompt.  You should see successful replies which indicates you can see that machine on the network.
+        </p>
+        
+        <p>
+           Now start the Jukes on the remote machine you are working on.   In Tools->Preferences there is a setting for Remote
+           Database URL.  This defaults to <code>jdbc:hsqldb:hsql://127.0.0.1/jukes</code> which is your local machine.  You
+           need to change that value to <code>jdbc:hsqldb:hsql://192.168.1.100/jukes</code> or whatever the IP address
+           from Step 3 was.  This will attempt to connect to the database running on the JUKEZ server.  You may get a 
+           connection error which means either the Jukes is not running on the server or for some reason you do not have
+           network access.
+        </p>
+        
+        <p>
+           <strong>NOTE: </strong>Depending on your network you may be able to use the machine name instead of the IP address.  
+           You can test this out by trying <code>jdbc:hsqldb:hsql://JUKEZ/jukes</code>.
+        </p>
+        
+        <p>
+           That's it!!!  Happy remoting, if all went well you should see your entire catalog and nothing should be RED.
+           Any comments or suggestions for this document are welcome.
+        </p>
+      </subsection>
+     
+    </section>
+    
+  </body>
+</document>

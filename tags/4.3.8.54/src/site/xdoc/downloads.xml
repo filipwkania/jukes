@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<document>
+  <properties>
+    <title>Downloads</title>
+    <author email="info.AT.melloware.DOT.com">Emil A Lefkof III</author>
+  </properties>
+  <body>
+    <section name="Download">
+      <p>
+      Download the appropriate package for your operating system.  
+      </p> 
+      <p>
+      <strong>NOTE: Java version 1.5 or higher is required before Jukes will run.</strong>
+      </p> 
+      <subsection name="Windows">
+        <p>
+          Just unzip the file and double click the EXE to run the application. Make sure
+          the DLL is in the same directory as the EXE for the tray icon to work.
+        </p>
+        <p>
+          <a href="./downloads/jukes-4.0.1.24-windows.zip"><img src="./images/disk_green.png" border="0"/>
+	  jukes-4.0.1.24-windows.zip
+	  </a>
+        </p>
+      </subsection>
+      
+      <subsection name="Linux, MacOSX, Solaris">
+        <p>
+          Just unzip the file and execute "javaw -Xms128m -Xmx256m -jar jukes-4.0.1.24-app.jar"
+        </p>
+        <p>
+          
+          <a href="./downloads/jukes-4.0.1.24-nix.zip"><img src="./images/disk_green.png" border="0"/>
+	  jukes-4.0.1.24-nix.zip
+	  </a>
+        </p>
+      </subsection>
+      
+      <subsection name="Put Up Your Jukes 3.1">
+        <p>
+           If you are interested in the original Windows only Delphi application.  Here it is.
+        </p>
+        <p>
+          <a href="http://melloware.com/download/warez/puyj.zip"><img src="./images/disk_green.png" border="0"/>
+	  puyj-3.1.zip
+	  </a>
+        </p>
+      </subsection>
+    </section>
+    
+  </body>
+</document>

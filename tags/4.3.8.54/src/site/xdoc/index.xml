@@ -1,0 +1,60 @@
+<document>
+
+  <properties>
+    <title>Cross Platform Music Organizer and Player</title>
+    <author email="info.AT.melloware.DOT.com">Emil A Lefkof III</author>
+  </properties>
+
+  <body>
+    <section name="Cross Platform Music Organizer and Player">
+
+      <subsection name="Introduction">
+      <p>
+        Jukes was created for the serious music lover.  This program was created for people who rip full CD's or possibly
+      their entire CD collection to their hard drive. Jukes allows you to have all of your CD's at your fingertips and play
+      them like a real jukebox. Perfect for DJ's, whether in your house or for parties or whatever, spin all of your favorite tunes
+      anytime you want. No more loading the files in to play them and removing them to add more to the list, now all of your CD's are
+      at your disposal!
+      </p>
+       </subsection>
+
+      <subsection name="History">
+
+        <p>
+          Jukes started out as Put Up Your Jukes! in 1998.  It was originally written as a Borland Delphi Windows application and has
+          served nicely for many years.  However now in 2006 the software has run its course.  There is no longer support for
+          many of the libraries it uses, and most of the Delphi support around the web is slowly dissapearing.  We had been 
+          experiencing some problems with newer ID3 tags and the library that Put Up Your Jukes! uses for tagging is no longer
+          supported.  I had never thought to rewrite it, much less rewrite it as a cross platform application because I felt the tools
+          just were not there to make it as fast and stable as it is right now.   I recently started noticing some quality cross
+          platform apps that did not look like Java apps such as Azureus and Eclipse.  It got me thinking I could rewrite it....
+        </p>
+
+      </subsection>
+      
+      <subsection name="Jukes 4.0">
+
+        <p>
+          Jukes 4.0 has been completely re-engineered after 7 years of experience using the old application.  It is now a cross
+          platform application that will work on Windows, Solaris, Linux, and MacOSX.  It contains all the same great features 
+          that Put Up Your Jukes had, and much much more.   See the <a href="new-features.html">New Features</a> section to read more 
+          about the new features.  Or check out the <a href="screenshots.html">Screenshots</a> and see for yourself.
+        </p>
+
+      </subsection>
+
+      <subsection name="Donate">
+
+        <p>
+          Although Jukes is open source, small financial donations are appreciated.  By supporting Melloware, you help fund the development
+          (mainly development tools and internet access etc) of Melloware's Software.   To send money, simply click on the paypal icon below: 
+        </p>
+        <p>
+        <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&amp;business=elefkof%40ksmpartners%2ecom&amp;item_name=Jukes%20Donation&amp;item_number=1&amp;no_shipping=0&amp;no_note=1&amp;tax=0&amp;currency_code=USD&amp;bn=PP%2dDonationsBF&amp;charset=UTF%2d8" id="donate"><img alt="Melloware Inc." src="https://www.paypal.com/images/x-click-but04.gif"></img></a>
+        </p>
+
+      </subsection>
+
+    </section>
+ </body>
+</document>

@@ -1,0 +1,139 @@
+<HTML>
+<HEAD>
+	<TITLE>Preferences</TITLE>
+	<link rel=stylesheet type="text/css" href="../style.css">
+</HEAD>
+<BODY>
+<H3>Preferences</H3>
+General program parameters can be accessed with <iTools - Preferences</i> menu item at the 
+<i>General</> tab.<br>
+Prigram parameters are devided to main groups as follows:<br>
+
+<b>Database</b><br>
+<i>Local Database Location</i> - Enter or select in dialog window 
+the path to the directory of database. 
+By default the database is located in the Application directory in db subdirectory.<br>
+
+<i>Remote Database URL</i> - Enter the URL of remote database. By default local database URL is used
+  jdbc:hsqldb:hsql://127.0.0.1/jukes. 
+Note: This URL is used by report generator.<br> 
+
+<p><b>Display</b><br> 
+<i>Disc Display Format</i> - Specify how the disc will be rendered.
+ %b for bitrate, %y for year, %r for running time, and %d for disc.
+ For example, [%y] %d (%r) %b kbps.<br> 
+
+<i>Track Display Format</i> - Specify how the track will be rendered. %b for bitrate, 
+%n for track number, %r for duration, and %t for track.  For example, %n. %t  (%r).<br>
+
+<i>New File Marker (in days)</i> - Specify Number of days a disc is considered 'New' or 'Recently Added'.
+By default 30 is used. "'New' albums is highlighted in the main tree with Bold font.<br>
+
+<i>Catalog Scroll Units</i> - Specify the mousewheel scroll speed in the catalog.
+By default 5 is used. <br>
+
+<i>Audit Information</i> - This flag is used to control whether to display the audit information or not
+The audit information includes date and time of creation and edition of database record and user name.
+By default this flag is turned on.<br>
+
+<i>Cover Size Small (in pixels)</i> Enter the size of the smaller cover images in pixels.
+The album cover image will be scalled down to this size when displaing cover in 
+the list of albums in Artist window, in Track window and other windows where small 
+cover images are used.
+By default 91 is used. <br>
+
+<i>Cover Size Large (in pixels)</i> - Enter the size of the larger cover images in pixels.
+The album cover image will be scalled to this size when displaing cover in 
+Album window.
+By default 200 is used.<br>
+
+<i>Row Color Even</i> - Enter row color for Even rows in such tables as 
+table of found tracks.<br>
+
+<i>Row Color Odd</i> - Enter row color for Odd rows in such tables as 
+table of found tracks.<br>
+
+<i>Show Main Tree by Default</i> This flag is used to control whether to display
+ Main Tree with All Artists by Default or Not. If this flag is turned Off the Main tree includes 
+only albums selected with filter. This mode can be useful to spead up main tree building for large 
+collection.
+By default this flag is turned On. <br>
+
+<i>Show Empty Nodes in the Tree</i> - This flag is used to control whether to display empty nodes in the main tree.
+For example, Artists without albums. 
+By default this flag is turned Off. <br>
+
+<p><b>Files and Directories</b><br> 
+<i>Music Directory</i> - Enter or select in dialog window 
+the path to the directory where audio files is located.
+<br>
+
+<i>File Format Music</i> - Specify format of music file names when renamed. 
+%n for track, %t for title, %a for artist, %d for disc.
+For example, %n - %t.<br> 
+
+<i>File Format Image</i> - Specify format of image file names when saved. 
+%a for artist, %d for disc or hard code a name like folder.jpg <br>
+
+<i>Default Playlist Type</i> - Select default playlist type either XSPF or M3U.<br>
+
+<i>Backup File</i> - Enter or select in dialog window 
+the path to the directory of the database backup file.
+By default backup.zip file will be created in 
+ backup subdirectory in the Application directory. <br>
+
+<i>Logfile Level</i> - Select Level of logging output to display in logfile.
+ Level of logging can be one of: Debug, Info, Warning, Error.
+Log files are located in LOG subdirectory in the Application directory. <br>
+
+<i>Copy Images</i> - This flag is used to control whether album cover images found in 
+albums directories will be copied to the directory specified by user or Not.
+The path to this directory is specified with <i>Images Directory</i> parameter.
+This mode can be useful if audio files are stored at the external removable devices and makes
+cover imagers available when looking through music collection.
+The format of image file names is specified with <i>File Format Image</i> parameter.
+By default this flag is turned Off.
+<br>
+
+<i>Images Directory</i> - Enter or select in dialog window 
+the path to the directory where copies of cover images are stored. 
+The format of image file names is specified with <i>File Format Image</i> parameter.<br>
+
+<p><b>Player</b><br> 
+<i>Spectrum Analyzer Mode</i> - Specify startup mode for the spectrum analyzer. 
+Either Off, Analyzer, or Scope.  Spectrum analyzer is not used in current version.
+This parameter is reserved for future use. <br>
+
+<i>Buffer Size (in bytes)</i> - Specify buffer size for audio player. Increase this number if you are hearing skips.
+By default 512 000 is used. <br>
+
+<i>Fade In On Play</i> -  This flag is used to control whether 
+to fade songs back in on play. By default this flag is turned On. <br>
+
+<i>Fade Out On Change</i> -  This flag is used to control whether  
+ to fade songs out on song change.  By default this flag is turned On. <br>
+
+<i>Fade Out On Pause</i> -  This flag is used to control whether 
+ to fade songs out on pause.  By default this flag is turned On. <br>
+
+<i>Fade Out On Stop</i> -  This flag is used to control whether 
+to fade songs out on stop.  By default this flag is turned On. <br>
+
+<p><b>Tags</b><br> 
+<i>Use CD Number</i> - This flag is used to control whether "Disc Number" tag 
+will be used to form album title on the basis of audio file tags.
+If this flag is turned On then 'Disc <Disc Number> of <Total Discs>' will be added to album title.
+For example, Disc 1 of 2. 
+By default this flag is turned Off. <br>
+
+<i>Album Artist Tag</i> - Specify the Name of Tag to be used as Album Artist tag.
+Album Artist tag is used to define Artist on the basis of audio file tags.
+By default 'ALBUM ARTIST' is used.<br>
+
+
+<i>Update Audio Tags in Files</i> - This flag is used to control whether 
+audio files tags will be updated when editing database records.
+By default this flag is turned On. <br>
+
+</BODY>
+</HTML>
