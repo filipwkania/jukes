@@ -64,7 +64,8 @@ public final class DiscValidator implements Validator {
    @Override
    public ValidationResult validate(Object validationTarget) {
       final PropertyValidationSupport support = new PropertyValidationSupport(disc, "Disc");
-
+      String[] separatorList = {":", ";", ".", "-", ",", "/"};
+      
       if (ValidationUtils.isBlank(disc.getName())) {
          support.addError(NAME, MESSAGE_MANDATORY);
       } else if (!ValidationUtils.hasMaximumLength(disc.getName(), 100)) {
@@ -81,22 +82,16 @@ public final class DiscValidator implements Validator {
             support.addError(GENRE, MESSAGE_LENGTH_100);
          }
          final String TmpString = disc.getGenre().toString();
-         final String BasicGenre;
-         if (TmpString.indexOf(":") > 0) {
-            BasicGenre = TmpString.substring(0, TmpString.indexOf(":")).trim();
-         } else if (TmpString.indexOf(",") > 0) {
-            BasicGenre = TmpString.substring(0, TmpString.indexOf(",")).trim();
-         } else if (TmpString.indexOf(";") > 0) {
-            BasicGenre = TmpString.substring(0, TmpString.indexOf(";")).trim();
-         } else if (TmpString.indexOf("-") > 0) {
-            BasicGenre = TmpString.substring(0, TmpString.indexOf("-")).trim();
-         } else if (TmpString.indexOf(".") > 0) {
-            BasicGenre = TmpString.substring(0, TmpString.indexOf(".")).trim();
-         } else if (TmpString.indexOf("/") > 0) {
-            BasicGenre = TmpString.substring(0, TmpString.indexOf("/")).trim();
-         } else
-            BasicGenre = TmpString.trim();
-
+         int index = TmpString.length();
+         
+         for(int i=0; i<separatorList.length; i++){
+         	final int currentIndex = TmpString.indexOf(separatorList[i]);
+         	if ((currentIndex > 0) & (currentIndex < index) ){
+             	index = currentIndex;
+             }
+         }
+         final String BasicGenre = TmpString.substring(0, index);
+     	
          if (!containsIgnoreCase(GENRE_LIST, BasicGenre)) {
             final String message = MessageFormat.format(MESSAGE_BASIC_GENRE, new Object[] { BasicGenre });
             support.addError(GENRE, message);
