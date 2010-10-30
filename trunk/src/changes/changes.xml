@@ -14,7 +14,7 @@
       </action>
     </release>
     <release version="4.3.7.53" date="2010-10-27" description="Correction Of Screen Resources">
-      <action dev="mellowaredev@gmail.com" type="fix" due-to="AZ Development" due-to-email="az_development@mail.ru">
+      <action dev="mellowaredev@gmail.com" type="fix" due-to="AZ Development" due-to-email="az.dvlpmnt@gmail.com">
 	Added New Resource objects to correct Russian translations
       </action>
     </release>
@@ -28,116 +28,116 @@
       <action dev="mellowaredev@gmail.com" type="fix">Fixed maven build to build both Windows and Unix deployments</action>
     </release>
     <release version="4.3.6.51" date="2010-10-17" description="Minor Fixes">
-      <action dev="mellowaredev@gmail.com" type="update" due-to="AZ Development" due-to-email="az_development@mail.ru"> Updated: Jasper Reports 3.7.5
+      <action dev="mellowaredev@gmail.com" type="update" due-to="AZ Development" due-to-email="az.dvlpmnt@gmail.com"> Updated: Jasper Reports 3.7.5
       </action>
     </release>
     <release version="4.3.5.50" date="2010-09-03" description="Minor Fixes">
-      <action dev="mellowaredev@gmail.com" type="update" due-to="AZ Development" due-to-email="az_development@mail.ru"> Fixed: Update Tags at Add Disc
+      <action dev="mellowaredev@gmail.com" type="update" due-to="AZ Development" due-to-email="az.dvlpmnt@gmail.com"> Fixed: Update Tags at Add Disc
         Dialog</action>
     </release>
     <release version="4.3.4.49" date="2010-08-26"
       description="Implementation of Hibernate 3.5.3, XML-import and export and some minor changes">
-      <action dev="mellowaredev@gmail.com" type="update" due-to="AZ Development" due-to-email="az_development@mail.ru"> Implementation of Hibernate
+      <action dev="mellowaredev@gmail.com" type="update" due-to="AZ Development" due-to-email="az.dvlpmnt@gmail.com"> Implementation of Hibernate
         3.5.3-Final release</action>
-      <action dev="mellowaredev@gmail.com" type="update" due-to="AZ Development" due-to-email="az_development@mail.ru"> XML- export and import</action>
+      <action dev="mellowaredev@gmail.com" type="update" due-to="AZ Development" due-to-email="az.dvlpmnt@gmail.com"> XML- export and import</action>
     </release>
     <release version="4.3.3.48" date="2010-06-30" description="Implementation of HyperSQL 2.0 and some minor changes">
-      <action dev="mellowaredev@gmail.com" type="update" due-to="AZ Development" due-to-email="az_development@mail.ru"> small modifications</action>
-      <action dev="mellowaredev@gmail.com" type="update" due-to="AZ Development" due-to-email="az_development@mail.ru"> New id3v24 processing</action>
-      <action dev="mellowaredev@gmail.com" type="update" due-to="AZ Development" due-to-email="az_development@mail.ru"> hsqldb 2.0.0</action>
-      <action dev="mellowaredev@gmail.com" type="update" due-to="AZ Development" due-to-email="az_development@mail.ru"> disclist table optimization
+      <action dev="mellowaredev@gmail.com" type="update" due-to="AZ Development" due-to-email="az.dvlpmnt@gmail.com"> small modifications</action>
+      <action dev="mellowaredev@gmail.com" type="update" due-to="AZ Development" due-to-email="az.dvlpmnt@gmail.com"> New id3v24 processing</action>
+      <action dev="mellowaredev@gmail.com" type="update" due-to="AZ Development" due-to-email="az.dvlpmnt@gmail.com"> hsqldb 2.0.0</action>
+      <action dev="mellowaredev@gmail.com" type="update" due-to="AZ Development" due-to-email="az.dvlpmnt@gmail.com"> disclist table optimization
       </action>
-      <action dev="mellowaredev@gmail.com" type="update" due-to="AZ Development" due-to-email="az_development@mail.ru"> database update optimization
+      <action dev="mellowaredev@gmail.com" type="update" due-to="AZ Development" due-to-email="az.dvlpmnt@gmail.com"> database update optimization
       </action>
     </release>
     <release version="4.3.2.47" date="2010-04-30" description="Multilingual Help, APE-files processing and some minor changes">
-      <action dev="mellowaredev@gmail.com" type="update" due-to="AZ Development" due-to-email="az_development@mail.ru"> Multilingual Help; English and
+      <action dev="mellowaredev@gmail.com" type="update" due-to="AZ Development" due-to-email="az.dvlpmnt@gmail.com"> Multilingual Help; English and
         Russian topics available</action>
-      <action dev="mellowaredev@gmail.com" type="update" due-to="AZ Development" due-to-email="az_development@mail.ru"> APE-files processing</action>
-      <action dev="mellowaredev@gmail.com" type="update" due-to="AZ Development" due-to-email="az_development@mail.ru"> Spectrum Analyzer is suspended
+      <action dev="mellowaredev@gmail.com" type="update" due-to="AZ Development" due-to-email="az.dvlpmnt@gmail.com"> APE-files processing</action>
+      <action dev="mellowaredev@gmail.com" type="update" due-to="AZ Development" due-to-email="az.dvlpmnt@gmail.com"> Spectrum Analyzer is suspended
       </action>
-      <action dev="mellowaredev@gmail.com" type="update" due-to="AZ Development" due-to-email="az_development@mail.ru"> Volume control is added</action>
+      <action dev="mellowaredev@gmail.com" type="update" due-to="AZ Development" due-to-email="az.dvlpmnt@gmail.com"> Volume control is added</action>
     </release>
     <release version="4.3.1.46" date="2010-03-12" description="FreeDB search, export to XML and some minor changes">
-      <action dev="mellowaredev@gmail.com" type="update" due-to="AZ Development" due-to-email="az_development@mail.ru"> FreeDB search</action>
-      <action dev="mellowaredev@gmail.com" type="update" due-to="AZ Development" due-to-email="az_development@mail.ru"> Export of DataBase to XML file
+      <action dev="mellowaredev@gmail.com" type="update" due-to="AZ Development" due-to-email="az.dvlpmnt@gmail.com"> FreeDB search</action>
+      <action dev="mellowaredev@gmail.com" type="update" due-to="AZ Development" due-to-email="az.dvlpmnt@gmail.com"> Export of DataBase to XML file
       </action>
     </release>
     <release version="4.3.0.45" date="2010-02-28" description="New version of Amazon search,  and some minor changes">
-      <action dev="mellowaredev@gmail.com" type="update" due-to="AZ Development" due-to-email="az_development@mail.ru"> New version of Amazon search
+      <action dev="mellowaredev@gmail.com" type="update" due-to="AZ Development" due-to-email="az.dvlpmnt@gmail.com"> New version of Amazon search
       </action>
-      <action dev="mellowaredev@gmail.com" type="update" due-to="AZ Development" due-to-email="az_development@mail.ru"> Catalog Export - export in UTF-8
+      <action dev="mellowaredev@gmail.com" type="update" due-to="AZ Development" due-to-email="az.dvlpmnt@gmail.com"> Catalog Export - export in UTF-8
         . Additional fields are added : year, genre, bitrate, location</action>
-      <action dev="mellowaredev@gmail.com" type="update" due-to="AZ Development" due-to-email="az_development@mail.ru"> Bitrate report - added report
+      <action dev="mellowaredev@gmail.com" type="update" due-to="AZ Development" due-to-email="az.dvlpmnt@gmail.com"> Bitrate report - added report
         parameters : "From", "To"; New report design</action>
-      <action dev="mellowaredev@gmail.com" type="update" due-to="AZ Development" due-to-email="az_development@mail.ru"> Albums for Artist report - added
+      <action dev="mellowaredev@gmail.com" type="update" due-to="AZ Development" due-to-email="az.dvlpmnt@gmail.com"> Albums for Artist report - added
         Dialog to select Artist</action>
     </release>
     <release version="4.2.0.44" date="2009-12-20" description="List of discs, Jukes portability and some minor fixes">
-      <action dev="mellowaredev@gmail.com" type="update" due-to="AZ Development" due-to-email="az_development@mail.ru"> New functionality: List of discs
+      <action dev="mellowaredev@gmail.com" type="update" due-to="AZ Development" due-to-email="az.dvlpmnt@gmail.com"> New functionality: List of discs
       </action>
-      <action dev="mellowaredev@gmail.com" type="update" due-to="AZ Development" due-to-email="az_development@mail.ru"> Add Single Track options added
+      <action dev="mellowaredev@gmail.com" type="update" due-to="AZ Development" due-to-email="az.dvlpmnt@gmail.com"> Add Single Track options added
       </action>
-      <action dev="mellowaredev@gmail.com" type="update" due-to="AZ Development" due-to-email="az_development@mail.ru"> Add Single Disc: Promt to select
+      <action dev="mellowaredev@gmail.com" type="update" due-to="AZ Development" due-to-email="az.dvlpmnt@gmail.com"> Add Single Disc: Promt to select
         directory instead of track</action>
-      <action dev="mellowaredev@gmail.com" type="update" due-to="AZ Development" due-to-email="az_development@mail.ru"> Multi-Lingual Error Messaging
+      <action dev="mellowaredev@gmail.com" type="update" due-to="AZ Development" due-to-email="az.dvlpmnt@gmail.com"> Multi-Lingual Error Messaging
         System</action>
-      <action dev="mellowaredev@gmail.com" type="update" due-to="AZ Development" due-to-email="az_development@mail.ru"> Jukes portability added: All
+      <action dev="mellowaredev@gmail.com" type="update" due-to="AZ Development" due-to-email="az.dvlpmnt@gmail.com"> Jukes portability added: All
         LOG-files are redirected to /log/ subdirectory in current Application directory; All default directories are
         redirected to current Application directory; All preferences are stored in jukes.xml file in current Application
         directory (System Register entry is used for compatibility);</action>
-      <action dev="mellowaredev@gmail.com" type="update" due-to="AZ Development" due-to-email="az_development@mail.ru"> Find and Add All discs mode:
+      <action dev="mellowaredev@gmail.com" type="update" due-to="AZ Development" due-to-email="az.dvlpmnt@gmail.com"> Find and Add All discs mode:
         optimization of subdirectory recursing</action>
     </release>
     <release version="4.2.0.43" date="2009-09-20" description="Russian">
-      <action dev="mellowaredev@gmail.com" type="update" due-to="AZ Development" due-to-email="az_development@mail.ru"> New multilingual resources.
+      <action dev="mellowaredev@gmail.com" type="update" due-to="AZ Development" due-to-email="az.dvlpmnt@gmail.com"> New multilingual resources.
       </action>
-      <action dev="mellowaredev@gmail.com" type="update" due-to="AZ Development" due-to-email="az_development@mail.ru"> Filter panel: Artist and Disc
+      <action dev="mellowaredev@gmail.com" type="update" due-to="AZ Development" due-to-email="az.dvlpmnt@gmail.com"> Filter panel: Artist and Disc
         filters are added to Filter panel. Exact Match flag is added to Filter panel.</action>
-      <action dev="mellowaredev@gmail.com" type="update" due-to="AZ Development" due-to-email="az_development@mail.ru"> Preferences: To speed up main
+      <action dev="mellowaredev@gmail.com" type="update" due-to="AZ Development" due-to-email="az.dvlpmnt@gmail.com"> Preferences: To speed up main
         tree initialisation new flag is added to Preferences - Show main tree by default. With this flag user can hide
         main tree and show filtered tree only.</action>
-      <action dev="mellowaredev@gmail.com" type="update" due-to="AZ Development" due-to-email="az_development@mail.ru"> Preferences: New "Update Audio
+      <action dev="mellowaredev@gmail.com" type="update" due-to="AZ Development" due-to-email="az.dvlpmnt@gmail.com"> Preferences: New "Update Audio
         Tags in files" flag is added to Preferences to allow user change database info without changing tags in music
         files.</action>
-      <action dev="mellowaredev@gmail.com" type="update" due-to="AZ Development" due-to-email="az_development@mail.ru"> Preferences: Check Genres tools
+      <action dev="mellowaredev@gmail.com" type="update" due-to="AZ Development" due-to-email="az.dvlpmnt@gmail.com"> Preferences: Check Genres tools
         is added to check genres of all discs for compliance with standard table of music genres.</action>
-      <action dev="mellowaredev@gmail.com" type="update" due-to="AZ Development" due-to-email="az_development@mail.ru"> Preferences: New option added to
+      <action dev="mellowaredev@gmail.com" type="update" due-to="AZ Development" due-to-email="az.dvlpmnt@gmail.com"> Preferences: New option added to
         allow copying covers from discs directories to selected directory. It allows to show covers even when external
         discs are not connected.</action>
-      <action dev="mellowaredev@gmail.com" type="update" due-to="AZ Development" due-to-email="az_development@mail.ru"> Tag processing: Album Artist
+      <action dev="mellowaredev@gmail.com" type="update" due-to="AZ Development" due-to-email="az.dvlpmnt@gmail.com"> Tag processing: Album Artist
         field is used for compilation albums. Appropriate parameter is added to Preferences.</action>
-      <action dev="mellowaredev@gmail.com" type="update" due-to="AZ Development" due-to-email="az_development@mail.ru"> Tag processing: Disc Number and
+      <action dev="mellowaredev@gmail.com" type="update" due-to="AZ Development" due-to-email="az.dvlpmnt@gmail.com"> Tag processing: Disc Number and
         Total Discs fields are used to process boxsets.</action>
-      <action dev="mellowaredev@gmail.com" type="update" due-to="AZ Development" due-to-email="az_development@mail.ru"> Preferences: New flag "Show Empty
+      <action dev="mellowaredev@gmail.com" type="update" due-to="AZ Development" due-to-email="az.dvlpmnt@gmail.com"> Preferences: New flag "Show Empty
         Node In Tree" is added to Preferences to allow user to show artists without discs.</action>
-      <action dev="mellowaredev@gmail.com" type="update" due-to="AZ Development" due-to-email="az_development@mail.ru"> New reports added - -Genres
+      <action dev="mellowaredev@gmail.com" type="update" due-to="AZ Development" due-to-email="az.dvlpmnt@gmail.com"> New reports added - -Genres
         report to show all genres in Catalog. -Catalog by genres report -All Discs for selected Artist report.</action>
-      <action dev="mellowaredev@gmail.com" type="update" due-to="AZ Development" due-to-email="az_development@mail.ru">
+      <action dev="mellowaredev@gmail.com" type="update" due-to="AZ Development" due-to-email="az.dvlpmnt@gmail.com">
         Genres: Complicated descriptions of genres are allowed. Descriptions of genres must be of following format
       </action>
-      <action dev="mellowaredev@gmail.com" type="update" due-to="AZ Development" due-to-email="az_development@mail.ru"> Playlists: - adding a few
+      <action dev="mellowaredev@gmail.com" type="update" due-to="AZ Development" due-to-email="az.dvlpmnt@gmail.com"> Playlists: - adding a few
         selected discs and artists to playlist - re-paint empty playlist after playlist clearance - GoTo button for tree
         with active filter -playlist clearance - deleting current track</action>
-      <action dev="mellowaredev@gmail.com" type="update" due-to="AZ Development" due-to-email="az_development@mail.ru"> Search tools : - Select button
+      <action dev="mellowaredev@gmail.com" type="update" due-to="AZ Development" due-to-email="az.dvlpmnt@gmail.com"> Search tools : - Select button
         for tree with active filter</action>
-      <action dev="mellowaredev@gmail.com" type="update" due-to="AZ Development" due-to-email="az_development@mail.ru"> Find discs: - "Errors only" flag
+      <action dev="mellowaredev@gmail.com" type="update" due-to="AZ Development" due-to-email="az.dvlpmnt@gmail.com"> Find discs: - "Errors only" flag
         is added ti allow user to hide all message except errors messages. - "All subdirectories successfully processed"
         message added to indicate the and of process. - System and hidden directories processing error was corrected
         -"readonly" files processing error was corrected</action>
-      <action dev="mellowaredev@gmail.com" type="update" due-to="AZ Development" due-to-email="az_development@mail.ru"> TCON (genre) tag processing: -
+      <action dev="mellowaredev@gmail.com" type="update" due-to="AZ Development" due-to-email="az.dvlpmnt@gmail.com"> TCON (genre) tag processing: -
         iTunes-style tag "(NNN)" processing is added</action>
-      <action dev="mellowaredev@gmail.com" type="update" due-to="AZ Development" due-to-email="az_development@mail.ru"> Cover processing: -Smooth scaling
+      <action dev="mellowaredev@gmail.com" type="update" due-to="AZ Development" due-to-email="az.dvlpmnt@gmail.com"> Cover processing: -Smooth scaling
         added</action>
-      <action dev="mellowaredev@gmail.com" type="update" due-to="AZ Development" due-to-email="az_development@mail.ru"> Year tag processing: -If no Year
+      <action dev="mellowaredev@gmail.com" type="update" due-to="AZ Development" due-to-email="az.dvlpmnt@gmail.com"> Year tag processing: -If no Year
         is specified in tags then "9999" year is used instead of current year as it was in previous version.</action>
-      <action dev="mellowaredev@gmail.com" type="update" due-to="AZ Development" due-to-email="az_development@mail.ru"> DiscEditor: -Option for changing
+      <action dev="mellowaredev@gmail.com" type="update" due-to="AZ Development" due-to-email="az.dvlpmnt@gmail.com"> DiscEditor: -Option for changing
         Artists for selected disc is added.</action>
-      <action dev="mellowaredev@gmail.com" type="update" due-to="AZ Development" due-to-email="az_development@mail.ru"> TrackEditor: -Disc is
+      <action dev="mellowaredev@gmail.com" type="update" due-to="AZ Development" due-to-email="az.dvlpmnt@gmail.com"> TrackEditor: -Disc is
         automatically deleted if all track are deleted for this disc.</action>
     </release>
     <release version="4.1.2.42" date="2008-11-14" description="Russian">
-      <action dev="mellowaredev@gmail.com" type="update" due-to="AZ Development" due-to-email="az_development@mail.ru"> Updated Russian Translation
+      <action dev="mellowaredev@gmail.com" type="update" due-to="AZ Development" due-to-email="az.dvlpmnt@gmail.com"> Updated Russian Translation
       </action>
     </release>
     <release version="4.1.2.41" date="2008-07-07" description="Library Updates">
