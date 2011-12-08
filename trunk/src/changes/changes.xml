@@ -5,6 +5,11 @@
     <author email="mellowaredev_AT_gmail_DOT_com">Melloware</author>
   </properties>
   <body>
+    <release version="4.3.9.55" date="2011-12-09" description="Removal of Amazon Search">
+      <action dev="mellowaredev@gmail.com" type="fix" due-to="AZ Development" due-to-email="az.dvlpmnt@gmail.com">
+	Amazon Search functionality was permanently removed due to changing in Amazon security policy
+      </action>
+    </release>
     <release version="4.3.8.54" date="2010-10-30" description="Minor Fixes">
       <action dev="mellowaredev@gmail.com" type="fix" due-to="AZ Development" due-to-email="az.dvlpmnt@gmail.com">
 	Corrected SQL query for YEAR-filter

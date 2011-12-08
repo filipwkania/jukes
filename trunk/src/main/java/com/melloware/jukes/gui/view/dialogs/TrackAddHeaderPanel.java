@@ -126,12 +126,9 @@ public final class TrackAddHeaderPanel
         final ToolBarBuilder toolBar = new ToolBarBuilder("DiscToolBar");
         toolBar.addGap(2);
         ToolBarButton button = null;
-        ActionManager.get(Actions.DISC_WEB_ID).setEnabled(true);
         ActionManager.get(Actions.DISC_COVER_ID).setEnabled(true);
         ActionManager.get(Actions.FILE_RENAME_ID).setEnabled(true);
-        button = (ToolBarButton)ComponentFactory.createToolBarButton(Actions.DISC_WEB_ID);
-        button.putClientProperty(Resources.EDITOR_COMPONENT, this.owner);
-        toolBar.add(button);
+
         button = (ToolBarButton)ComponentFactory.createToolBarButton(Actions.DISC_COVER_ID);
         button.putClientProperty(Resources.EDITOR_COMPONENT, this.owner);
         toolBar.add(button);

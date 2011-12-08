@@ -45,7 +45,6 @@ public final class DiscValidationModel extends AbstractValidationModel {
       final boolean isValid = ((disc == null) ? false : disc.isValid());
       ActionManager.get(Actions.FILE_RENAME_ID).setEnabled(isValid && enabled);
       ActionManager.get(Actions.DISC_COVER_ID).setEnabled(isValid && enabled);
-      ActionManager.get(Actions.DISC_WEB_ID).setEnabled(isValid && enabled);
       ActionManager.get(Actions.FREE_DB_ID).setEnabled(isValid && enabled);
    }
 
