@@ -93,7 +93,6 @@ public final class Actions {
    public static final String PREFERENCES_EXPORT_ID = "preferences.export";
    public static final String CONNECT_ID = "connect";
    public static final String DELETE_ID = "delete";
-   public static final String DISC_WEB_ID = "disc.web";
    public static final String DISC_COVER_ID = "disc.cover";
    public static final String DISC_ADD_ID = "disc.add";
    public static final String DISC_ADD_TITLECASE_ID = "disc.add.titlecase";
@@ -549,11 +548,7 @@ public final class Actions {
             getController().memory(event);
          }
       });
-      ActionManager.register(DISC_WEB_ID, new AbstractAction() {
-         public void actionPerformed(ActionEvent event) {
-            getController().discWebSearch(event);
-         }
-      });
+      
       ActionManager.register(DISC_COVER_ID, new AbstractAction() {
          public void actionPerformed(ActionEvent event) {
             getController().discCoverImage(event);
@@ -754,7 +749,6 @@ public final class Actions {
       ActionManager.get(Actions.DISC_REMOVER_ID).setEnabled(enabled);
       ActionManager.get(Actions.TOOL_DIFFERENCE_ID).setEnabled(enabled);
       ActionManager.get(Actions.TOOL_STATISTICS_ID).setEnabled(enabled);
-      ActionManager.get(Actions.DISC_WEB_ID).setEnabled(enabled);
       ActionManager.get(Actions.CATALOG_EXPORT_ID).setEnabled(enabled);
       ActionManager.get(Actions.SEARCH_ID).setEnabled(enabled);
       ActionManager.get(Actions.TOOL_LOCATION_ID).setEnabled(enabled);

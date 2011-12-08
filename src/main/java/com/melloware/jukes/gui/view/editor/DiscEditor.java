@@ -68,7 +68,6 @@ import com.melloware.jukes.gui.view.MainMenuBuilder;
 import com.melloware.jukes.gui.view.component.AlbumImage;
 import com.melloware.jukes.gui.view.component.ComponentFactory;
 import com.melloware.jukes.gui.view.component.TrackListCellRenderer;
-import com.melloware.jukes.gui.view.dialogs.WebSearchDialog;
 import com.melloware.jukes.gui.view.tasks.TimerListener;
 import com.melloware.jukes.gui.view.tasks.UpdateTagsTask;
 import com.melloware.jukes.gui.view.validation.DiscValidationModel;
@@ -584,115 +583,6 @@ public final class DiscEditor extends AbstractEditor {
 	}
 
 	/**
-	 * Performs the Amazon.com web service search.
-	 */
-	public void webSearch() {
-		super.webSearch();
-		final Disc disc = getDisc();
-		if (disc.isNotValid()) {
-			final String errorMessage = ResourceUtils
-					.getString("messages.discnotexists");
-			MessageUtil.showError(this, errorMessage); // AZ
-			LOG.error(errorMessage);
-			return;
-		}
-		// check for validation errors, if any then do no changes
-		if (hasErrors()) {
-			LOG.error(Resources.MESSAGE_EDITOR_ERRORS);
-			MessageUtil.showError(this, Resources.MESSAGE_EDITOR_ERRORS); // AZ
-			return;
-		}
-
-		final WebSearchDialog dialog = new WebSearchDialog(getMainFrame(),
-				getSettings());
-		dialog.setSelectedArtist(disc.getArtist().getName());
-		dialog.setSelectedDisc(disc.getName());
-		dialog.open();
-
-		// if the user did not select anything
-		if (dialog.hasBeenCanceled()) {
-			return;
-		}
-
-		// flag for if this year or name was modified
-		boolean modified = false;
-
-		// if disc is not blank and does not contain a subtitle like - Disc 1
-		final String[] checkList = { "- Disc", "-Disc", "- disc" };
-		if (((StringUtils.isNotBlank(dialog.getSelectedDisc())) && (StringUtils
-				.indexOfAny(nameField.getText(), checkList) <= 0))) {
-			if (!(dialog.getSelectedDisc().equals(nameField.getText()))) {
-				disc.setName(dialog.getSelectedDisc());
-				nameField.setText(dialog.getSelectedDisc());
-				modified = true;
-			}
-		}
-		if ((StringUtils.isNotBlank(dialog.getSelectedYear()))
-				&& (Integer.valueOf(dialog.getSelectedYear()).intValue() != Integer
-						.valueOf(year.getText()).intValue())) {
-			disc.setYear(dialog.getSelectedYear());
-			year.setText(dialog.getSelectedYear());
-			modified = true;
-		}
-		if (dialog.getSelectedImage() != null) {
-			try {
-				if (StringUtils.isNotBlank(disc.getCoverUrl())) {
-					ImageFactory.saveImage(dialog.getSelectedImage(),
-							disc.getCoverUrl());
-				} else {
-					String filename = disc.getLocation()
-							+ SystemUtils.FILE_SEPARATOR + "cover."
-							+ ImageFilter.JPG;
-					ImageFactory.saveImage(dialog.getSelectedImage(), filename);
-					disc.setCoverUrl(filename);
-				}
-				albumImage.setImage(ImageFactory.getDiscImage(
-						disc.getCoverUrl()).getImage());
-				// Save copy image
-				final File coverFile = new File(disc.getCoverUrl());
-				ImageFactory.saveImageToUserDefinedDirectory(coverFile, disc
-						.getArtist().getName(), disc.getName(), disc.getYear());
-			} catch (IOException ex) {
-				final String errorMessage = ResourceUtils
-						.getString("messages.ErrorSavingCoverImage");
-				MessageUtil.showError(this, errorMessage); // AZ
-				LOG.error(errorMessage, ex);
-			}
-		}
-		if (StringUtils.isNotBlank(dialog.getSelectedArtist())) {
-			if (!(dialog.getSelectedArtist().equals(artistField.getText()))) {
-				artistField.setText(dialog.getSelectedArtist());
-				modified = true;
-			}
-		}
-
-		if (dialog.getSelectedTracks() != null) {
-			if (dialog.getSelectedTracks().size() == disc.getTracks().size()) {
-				int ii = 0;
-				List trackList = new ArrayList(dialog.getSelectedTracks());
-				for (Iterator iter = getDisc().getTracks().iterator(); iter
-						.hasNext();) {
-					Track track = (Track) iter.next();
-					track.setName(trackList.get(ii).toString());
-					ii = ii + 1;
-				}
-				modified = true;
-			} else {
-				final String errorMessage = ResourceUtils
-						.getString("messages.WrongNumberOfTracks");
-				MessageUtil.showwarn(this, errorMessage);
-				LOG.error(errorMessage);
-			}
-		}
-
-		// update dataModel and view for changes //AZ
-		if (modified) {
-			updateModel();
-			updateView();
-		}
-	}
-
-	/**
 	 * Reads view contents from the underlying model.
 	 */
 	protected void updateView() {
@@ -834,10 +724,6 @@ public final class DiscEditor extends AbstractEditor {
 		bar.add(button);
 		button = (ToolBarButton) ComponentFactory
 				.createToolBarButton(Actions.DISC_COVER_ID);
-		button.putClientProperty(Resources.EDITOR_COMPONENT, this);
-		bar.add(button);
-		button = (ToolBarButton) ComponentFactory
-				.createToolBarButton(Actions.DISC_WEB_ID);
 		button.putClientProperty(Resources.EDITOR_COMPONENT, this);
 		bar.add(button);
 		button = (ToolBarButton) ComponentFactory

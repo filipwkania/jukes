@@ -61,7 +61,7 @@ import com.melloware.jukes.ws.FreeDBSearch;
  */
 public final class FreeDBDialog extends AbstractDialog {
 
-   private static final Log LOG = LogFactory.getLog(WebSearchDialog.class);
+   private static final Log LOG = LogFactory.getLog(FreeDBDialog.class);
    private FreeDBItem selection;
    private Collection selectedTracks;
    private DefaultListModel listModel;

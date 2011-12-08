@@ -525,23 +525,6 @@ public final class MainController {
       new DiscRemoveDialog(getDefaultParentFrame()).open();
    }
 
-   /**
-    * Uses the Amazon.com web service to find album information and covers.
-    * <p>
-    * @param aEvent the Action Event fired for this button
-    */
-   public void discWebSearch(final ActionEvent aEvent) {
-      LOG.debug("Web Search");
-      final JComponent button = (JComponent) aEvent.getSource();
-      final Object editor = button.getClientProperty(Resources.EDITOR_COMPONENT);
-      if (editor != null) {
-         if (editor instanceof AbstractEditor) {
-            ((AbstractEditor) editor).webSearch();
-         } else if (editor instanceof DiscAddDialog) {
-            ((DiscAddDialog) editor).webSearch();
-         }
-      }
-   }
 
    /**
     * Launches a browser and send to the PayPal website

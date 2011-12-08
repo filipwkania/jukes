@@ -129,14 +129,10 @@ public final class DiscAddHeaderPanel
         toolBar.addGap(2);
         ToolBarButton button = null;
         ActionManager.get(Actions.FREE_DB_ID).setEnabled(true);
-        ActionManager.get(Actions.DISC_WEB_ID).setEnabled(true);
         ActionManager.get(Actions.DISC_COVER_ID).setEnabled(true);
         ActionManager.get(Actions.FILE_RENAME_ID).setEnabled(true);
         //AZ: Add FreeDB Search
         button = (ToolBarButton)ComponentFactory.createToolBarButton(Actions.FREE_DB_ID);
-        button.putClientProperty(Resources.EDITOR_COMPONENT, this.owner);
-        toolBar.add(button);
-        button = (ToolBarButton)ComponentFactory.createToolBarButton(Actions.DISC_WEB_ID);
         button.putClientProperty(Resources.EDITOR_COMPONENT, this.owner);
         toolBar.add(button);
         button = (ToolBarButton)ComponentFactory.createToolBarButton(Actions.DISC_COVER_ID);
